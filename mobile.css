@@ -1,0 +1,172 @@
+/* 74 1775
+48 418
+
+74 - 48 = 26
+
+nav - 68.2%
+a padding 10px
+
+
+icont 170.96 / 17.75
+
+h1 - 39%
+h4 -44%
+btn - 13.3%
+*/
+
+/* 17.75 */
+
+/* h2.pxs{
+     
+    /* font-size: calc(48px + 26 * (100vw / 1775));
+} */ 
+
+/* *{
+    /* font-size: 20px; 1.5416*/
+/* 
+    font-family: Graphik-Regular; */
+
+
+/* header{
+    /* border: solid; */
+    /* background-color:saddlebrown ;
+    height: auto;
+    width: 1535px; */
+   
+
+/* 15.25 */
+
+/* 17.75 */
+/* 
+.cta {
+    /* border: solid;
+    display: flex; */
+    border: solid;
+    
+}
+/* .cta__container {
+    margin: auto;
+    display: flex;  
+    max-width: calc(1548px * var(--divider));
+    width: 100%;
+    justify-content: center;
+}
+.cta__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70.86%  ;
+    position: relative;
+    margin: calc(106px * var(--divider)) 0 0 0; 
+    margin-top: calc(69px * var(--divider));  
+}
+.cta__img {
+    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit:fill;  
+    object-position: bottom; 
+    border: solid;
+}
+.cta__right {
+    margin: calc(69px * var(--divider)) 0;
+    width: 35.14%;
+    padding: 100px 0 0 4%;
+}
+.cta__text-content {
+    margin-bottom: 25px;
+}
+.cta__title {
+    font: var(--font__h3);
+    padding: 7px 0;
+}
+.cta__subtitle {
+    font: var(--font__h2);
+    padding: 10px 0;
+}
+.cta__action {
+    
+}
+.cta__action-title {
+    font: var(--font__h3);
+}
+.cta__action-description {
+    font: var(--font__p);
+}
+.cta__form {
+
+    display: flex;
+    padding: 34px 0;
+    
+
+}
+
+@media screen  and (max-width: 992px) {
+  .cta__left{
+    width: 60%;
+  }
+  .cta__right {
+    margin: calc(69px * var(--divider)) 0;
+    padding: calc( 1px + 100 * (100vw / 992) ) 0 0 calc( 1px + 63 * (100vw / 992) );
+    background-color: blueviolet;
+    padding: 0;
+    align-items: center;
+    flex-grow: 1;
+
+}
+
+.cta__text-content {
+  margin-bottom: 25px;
+  border: solid;
+}
+  .cta__form {
+    display: flex;
+    padding: 34px 0;
+    flex-direction:column;
+    border: solid;
+
+}
+.cta__input {
+  width: 273px;
+  height: 58px;
+
+}
+.input {
+  
+  background-color: var(--input__color);
+  border-radius: 50px;
+  margin-right: 12px  ;
+
+}
+.cta__submit {
+  height: 58px;
+  width: 172px;
+  
+
+}
+
+  
+}
+
+
+.cta__input {
+    width: 273px;
+    height: 58px;
+
+}
+.input {
+    
+    background-color: var(--input__color);
+    border-radius: 50px;
+    margin-right: 12px  ;
+
+}
+.cta__submit {
+    height: 58px;
+    width: 172px;
+    
+
+}
+.btn {
+} */ 

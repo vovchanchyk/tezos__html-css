@@ -1,0 +1,17 @@
+:root{
+--btn__color: rgb(64, 158, 247);
+--bckg__color:#fff;
+--price__bckg:rgba(37, 43, 66, 1);
+--footer__bckg:rgba(37, 43, 66, 1);
+--drk__text:rgba(55, 71, 84, 1);
+--title__text:rgba(37, 43, 66, 1);
+--font__link:15px;
+--font__h4:28px/40px Graphik-Regular;
+--font__h2:48px/55px Graphik-Regular;
+--font__p: 18px/25px Graphik-Regular;
+--font__btn:20px/28px Graphik-Regular;
+
+--font__h3: 20px/28px Graphik-Bold;
+--input__color:rgba(244, 244, 244, 1);
+--font__h6: 16px/23px Graphik-Regular;
+}
