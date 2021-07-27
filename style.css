@@ -8,22 +8,27 @@
   --divider: 0.8582;
   font-family: Graphik-Regular;
 }
-
+html,body{
+  min-width: 418px;
+}
 .header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 0;
+  width: 100%;
   background: conic-gradient(
       at 50% 90%,
-      rgba(0, 0, 0, 0.1) 20%,
-      #fff 20%,
-      #fff 80%,
-      rgba(0, 0, 0, 0.1) 80%
+      rgba(0, 0, 0, 0.1) 21%,
+      #fff 21%,
+      #fff 79%,
+      rgba(0, 0, 0, 0.1) 79%
     ),
-    url(./imgs/header/80b7ece24a3d47292461f8e199ffdd36.jfif) no-repeat center /
+    url(./imgs/header/80b7ece24a3d47292461f8e199ffdd36.jfif) no-repeat 50% /
       cover;
   color: white;
+  
 }
 .header__head {
   height: 133px;
@@ -78,15 +83,16 @@
   align-items: center;
 }
 .header__description {
-  width: calc(826px * var(--divider));
-  height: calc(335px * var(--divider));
-  margin-top: calc(80px * var(--divider));
+  max-width: 826px;
+  max-height: 335px;
+  margin-top: 80px;
 }
 .header__title {
   text-align: center;
   font-family: Graphik-Bold;
-  font-size: calc(74px * var(--divider));
+  font-size: calc(50px + 24 * (100vw / 1777));
   padding: 7px;
+  
 }
 .header__subtitle {
   text-align: center;
@@ -120,7 +126,7 @@
   align-items: center;
 }
 .feature__description {
-  width: 552px;
+  max-width: 552px;
   margin-bottom: 80px;
   margin: 0 auto 80px;
 }
@@ -163,7 +169,7 @@
   max-width: 1058.19px;
   padding: 50px 0;
   width: 100%;
-  border: solid;
+  
 }
 .video__player {
   width: 100%;
@@ -198,7 +204,6 @@
   max-width: 1243px;
   width: 95%;
   text-align: center;
-  border: solid;
   overflow: hidden;
 }
 .hero__column {
@@ -572,14 +577,15 @@
   width: 100%;
 }
 .contacts__form {
+  width: 453px;
+  height: 669px;
 }
 .form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 453px;
-  height: 669px;
+  
   font: var(--font__field);
 }
 .form__container {
@@ -629,17 +635,7 @@
   
 }
 
-/* @media screen and (max-width: 992px) {
-  .contacts__right {
-    margin: 0px 0;
-  }
-  .contacts__items {
-    flex-direction: column;
-    align-self: flex-start;
-    text-align: start;
-    padding-left: 30px;
-  }
-} */
+
 .contacts__addres-item {
   min-width: 137px;
   max-width: 313px;
@@ -844,7 +840,128 @@
   }
   
 }
-@media screen  and (max-width:){
+
+@media screen and (max-width:540px) {
+
+  .header {
+  }
+  .header__head {
+    flex-wrap: nowrap;
+    padding: 0;
+    position: relative;
+    height: auto;
+  }
+  .header__logo {
+   
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    height: 75px;
+    width: 100px;
+   
+  }
+  .header__burger:hover{
+    background-color:rgba(91, 133, 97, 0.5);
+  }
+.header__burger:hover ~ nav, .header__nav:hover{  
+  display: block;
+  background-color: rgba(91, 133, 97, 0.2);
+}
+
+.header__nav-link:hover{
+  background-color:rgba(91, 133, 97, 0.4);
+
+}
+
+  .header__burger-img {
+  }
+  .header__social {
+    display: none;
+  }
+  .header__social-link {
+  }
+  .header__social-icon {
+  }
+  .header__nav {
+    display: none;
+    order: 0;
+    position: absolute;
+    top: 99%;
+    left: 0%;
+    width: 100%;
+  }
+  .header__nav-item {
+    padding:0;
+  }
+  
+ 
+
+  .header__nav-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 5px;
+    
+  }
+  .header__body {
+  }
+  .header__description {
+  }
+  .header__title {
+  }
+  .header__subtitle {
+  }
+  .header__btn {
+  }
+  .btn {
+  }
+  
+}
+
+
+@media screen  and (max-width:768px){
+
+  .feature {
+  }
+  .feature__container {
+  }
+  .feature__description {
+
+    margin: 0 auto 0px;
+  }
+  .feature__title {
+  }
+  .feature__subtitle {
+  }
+  .features__items {
+   flex-direction: column;
+   order: 1;
+   margin: 0px;
+  }
+  .features__item:nth-child(2){
+    margin: 75px 0;
+  }
+  .item {
+  }
+  .item__img {
+  }
+  .item__title {
+  }
+  .item__text {
+  }
+  .features__video {
+  }
+  .video {
+    padding: 0;
+    margin: 50px 0 50px 0;
+  }
+  .video__player {
+  }
+  .video__btn {
+  }
+  .video__arrow {
+  }
   
 }
 
@@ -902,6 +1019,7 @@
   .cta__right {
     max-width: 100%;
     margin: 0px 22px;
+    text-align: center;
   }
   .cta__text {
     display: none;
@@ -909,15 +1027,19 @@
   .cta__action {
   }
   .cta__action-title {
+  
+    padding: 10px;
   }
   .cta__action-description {
+    padding: 10px;
   }
   .cta__form {
-  
+    justify-content: center;
   }
   .cta__input {
     width: 353px;
     margin-right: 0px;
+    border: solid;
   }
   .input {
   }
@@ -1074,6 +1196,7 @@
   .contacts__container {
     padding: 50px 20px;
     margin: 0 0 99px 0;
+    border: solid;
   }
   
   .contacts__text {
@@ -1144,12 +1267,95 @@
   
 }
 
+@media screen and (max-width:540px) {
+
+  .contacts {
+  }
+  .contacts__container {
+    padding: 50px 20px;
+    margin: 0 0 99px 0;
+    border: solid;
+  }
+  
+  .contacts__text {
+    margin-bottom: 50px;
+  }
+  .contacts__title {
+  }
+  .contacts__subtitle {
+  }
+  .contacts__action {
+    flex-direction: column;
+   align-items: center;
+  }
+  .contacts__form {
+    margin-bottom: 50px;
+    border: solid;
+    width: 100%;
+    min-width: 330px;
+  }
+  .form {
+    order: 1;
+  }
+  .form__container {
+  }
+  .form__title {
+  }
+  .form__input {
+  }
+  .form__message {
+    resize: none;
+  }
+  .form__btn {
+  }
+  .btn {
+  }
+  .contacts__right {
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 50px;  
+  }
+  .contacts__items {
+    text-align: start;
+    flex-direction: column;
+    order: 1;
+    padding: 18px 0;
+   
+  }
+  .contacts__addres-item {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+  }
+  .contacts__addres-item:nth-child(2n){
+    margin: 10px 0;
+  }
+  .contact__icon {
+  }
+  .contacts__item-text {
+    margin-left: 10px;
+  }
+  .contacts__map {
+    display: none;
+  }
+  .contacts__social {
+    margin: 0 auto 50px;
+  }
+  .contacts__social-link {
+  }
+  .contacts__social-icon {
+  }
+  
+}
+
+
+
 @media screen and (max-width:768px){
   .footer {
   }
   .footer__container {
     flex-direction: column;
-    
+    padding: 107px 0;
     align-items: center;
 
   }
