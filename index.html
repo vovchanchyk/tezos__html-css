@@ -7,15 +7,13 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="./mobile.css"
-      media="only screen and (max-width:540px)"
-    />
+    <link rel="stylesheet" href="./tablet.css"  media="only screen and (max-width:992px)"/>
+    <link rel="stylesheet" href="./mobile.css"  media="only screen and (max-width:768px)"/>
   </head>
 
   <body>
     <header class="header">
+   
       <div class="header__head">
         <img
           src="./imgs/header/logo/Rectangle 4.svg"
@@ -29,7 +27,50 @@
             class="header__burger-img"
           />
         </button>
-        <ul class="header__social">
+        <nav class="header__nav">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link"> Home </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link"> Product </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link"> Pricing </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link"> About </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link"> Contact </a>
+          </li>
+          <li class="header__nav-item">
+            <ul class="header__social">
+              <a href="#" class="header__social-link">
+                <img
+                  src="./imgs/social/tv.svg"
+                  alt=""
+                  class="header__social-icon"
+                />
+              </a>
+              <a href="#" class="header__social-link">
+                <img
+                  src="./imgs/social/fb.svg"
+                  alt=""
+                  class="header__social-icon"
+                />
+              </a>
+              <a href="#" class="header__social-link">
+                <img
+                  src="./imgs/social/in.svg"
+                  alt=""
+                  class="header__social-icon"
+                />
+              </a>
+            </ul>
+          </li>
+          
+        </nav>
+         <ul class="header__social">
           <a href="#" class="header__social-link">
             <img
               src="./imgs/social/tv.svg"
@@ -51,24 +92,7 @@
               class="header__social-icon"
             />
           </a>
-        </ul>
-        <nav class="header__nav">
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link"> Home </a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link"> Product </a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link"> Pricing </a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link"> About </a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link"> Contact </a>
-          </li>
-        </nav>
+        </ul> 
       </div>
       <div class="header__body">
         <hgroup class="header__description">
