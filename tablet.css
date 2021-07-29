@@ -1,6 +1,4 @@
 
-    .header {
-    }
     .header__head {
       flex-wrap: wrap;
       height: auto;
@@ -48,7 +46,6 @@
       display: block;
       background-color: rgba(22, 24, 22, 0.4);
     }
-  
   
     .header__nav-item:hover {
       background-color: rgba(22, 24, 22, 0.7);
