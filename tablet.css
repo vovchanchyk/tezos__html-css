@@ -1,59 +1,107 @@
+.header__head {
+  flex-wrap: wrap;
+  height: auto;
+  position: absolute;
+  top: 0;
+}
 
-    .header__head {
-      flex-wrap: wrap;
-      height: auto;
-      position: absolute;
-      top: 0;
-    }
-  
-    .header__burger {
-      display: block;
-      height: 75px;
-      width: 100px;
-    }
-  
-    .header__social {
-      display: none;
-      justify-content: flex-start;
-      gap: 15px;
-      width: 100%;
-      order: 2;
-      padding: 15px;
-     
-    }
-    .header__nav .header__social {
-      display: flex;
-    }
-    .header__nav {
-      display: none;
-      flex-direction: column;
-      justify-content: flex-start;
-      gap: 15px;
-      width: 100%;
-      background-color: rgba(91, 133, 97, 0.4);
-      order: 1;
-    }
-  
-    .header__nav-link {
-      display: block;
-      width: 100%;
-      height: 100%;
-      padding: 10px 5px;
-    }
-  
-    .header__burger:hover ~ nav,
-    .header__nav:hover {
-      display: block;
-      background-color: rgba(22, 24, 22, 0.4);
-    }
-  
-    .header__nav-item:hover {
-      background-color: rgba(22, 24, 22, 0.7);
-    }
+.header__burger {
+  display: block;
+  height: 75px;
+  width: 100px;
+}
 
+.header__social {
+  display: none;
+  justify-content: flex-start;
+  gap: 15px;
+  width: 100%;
+  order: 2;
+  padding: 15px;
+}
+.header__nav .header__social {
+  display: flex;
+}
+.header__nav {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+  width: 100%;
+  background-color: rgba(91, 133, 97, 0.4);
+  order: 1;
+}
 
-    
+.header__nav-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 5px;
+}
 
-  
+.header__burger:hover ~ nav,
+.header__nav:hover {
+  display: block;
+  background-color: rgba(22, 24, 22, 0.4);
+}
 
- 
+.header__nav-item:hover {
+  background-color: rgba(22, 24, 22, 0.7);
+}
+
+.video {
+  padding: 6px 0;
+  margin: 0;
+}
+
+.cta__container {
+  gap: 59px;
+}
+.cta__mobile {
+  display: block;
+}
+.cta__left {
+  margin-top: 0;
+  align-self: center;
+}
+.cta__right {
+  margin: 0;
+}
+.cta__img {
+  object-position: -44px;
+  margin: 10px;
+}
+.cta__action {
+  text-align: center;
+}
+
+.cta__text {
+  display: none;
+}
+
+.contacts__container {
+  grid-template-columns: 106px minmax(10px, 50px) 500px minmax(10px, 50px) 106px;
+  row-gap: 50px;
+}
+
+.contacts__text {
+  grid-area: 1/1/2/6;
+}
+
+.contacts__form {
+  grid-area: 3/3/4/4;
+  text-align: center;
+}
+.form__container {
+  grid-template-columns:
+    minmax(10px, 50px)
+    minmax(280px, 1fr)
+    minmax(10px, 50px);
+}
+
+.contacts__right {
+  grid-area: 2/2/3/5;
+}
+.contacts__social {
+  margin: auto;
+}
