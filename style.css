@@ -36,7 +36,7 @@ body {
    rgba(265,265,265, 1) 140deg),
   url(./imgs/header/80b7ece24a3d47292461f8e199ffdd36.jfif) no-repeat 50% /
   cover;
-
+  border: solid;
 }
 .header__head {
   height: 133px;
