@@ -190,42 +190,5 @@
     padding: 0 10px;
   }
 
-  /* .contacts {
-  }
-
-  .contacts__form {
-    margin-bottom: 50px;
-    width: 100%;
-    min-width: 330px;
-  }
-
-  .contacts__right {
-    width: 100%;
-    align-items: flex-start;
-    margin-bottom: 50px;
-  }
-  .contacts__items {
-    text-align: start;
-    flex-direction: column;
-    order: 1;
-    padding: 18px 0;
-  }
-  .contacts__addres-item {
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-  }
-  .contacts__addres-item:nth-child(2n) {
-    margin: 10px 0;
-  }
-
-  .contacts__item-text {
-    margin-left: 10px;
-  }
-  .contacts__map {
-    display: none;
-  }
-  .contacts__social {
-    margin: 0 auto 50px;
-  } */
 }
+

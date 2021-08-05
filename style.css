@@ -1,7 +1,6 @@
 @import url(./fonts.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url(./vars.css);
-@import url(mobile.css) screen and (max-width: 480px);
 @import url(zero.css);
 
 :root {
@@ -56,8 +55,6 @@ body {
   background: transparent;
   height: fit-content;
   display: none;
-}
-.header__burger-img {
 }
 .header__social {
   width: calc(170px * var(--divider));
@@ -124,9 +121,7 @@ body {
   padding: 10px 32px;
 }
 
-.feature {
- 
-}
+
 .feature__container {
   display: flex;
   flex-direction: column;
@@ -151,8 +146,7 @@ body {
   flex-wrap: wrap;
   gap: 52px;
 }
-.features__item {
-  
+.features__item { 
   flex:0 0 255px;
 }
 .item {
@@ -171,8 +165,7 @@ body {
 .item__text {
   font: var(--font__p);
 }
-.features__video {
-}
+
 .video {
   position: relative;
   max-width: 1058.19px;
@@ -257,7 +250,6 @@ body {
 }
 
 
-
 .cta {
 }
 .cta__container {
@@ -325,8 +317,7 @@ body {
 .cta__input {
     flex: 1 1 273px;
     height: 58px;
-    background: rgba(244, 244, 244, 1);
-    
+    background: rgba(244, 244, 244, 1);   
 }
 
 .cta__submit {
@@ -592,14 +583,12 @@ body {
 .contacts__title {
   font: var(--font__h2);
   padding: 10px;
- 
 }
 .contacts__subtitle {
   font: var(--font__h4);
   padding: 10px;
 }
 .contacts__form {
-
   grid-area: 2/2/3/3;
   box-shadow: -1px -1px 0px 0px rgba(87, 91, 95, 0.3),
     2px 5px 10px 1px rgba(87, 91, 95, 0.3);
@@ -675,11 +664,9 @@ body {
  
 }
 
-
-
-
-
 /* footer */
+
+
 .footer{
   background-color: var(--dark__bckg);
 }
@@ -700,15 +687,13 @@ body {
   width: 58%;
   grid-template-columns: repeat(3, 1fr);
 }
-.footer__column {
-}
+
 .footer__list-title {
   font: var(--font__h3);
   padding: 10px 0;
   margin: 0 0 15px 0;
 }
-.footer__list {
-}
+
 .footer__list-item:not(:last-child) {
   margin: 0 0 16px 0;
 }
@@ -732,8 +717,6 @@ body {
   overflow: hidden;
 }
 
-.footer__contacts-icon {
-}
 .footer__contacts-item {
   display: flex;
 }
@@ -754,10 +737,6 @@ body {
 }
 .footer__social-link:nth-child(2) {
   margin: 0 24px;
-}
-.footer__social-icon {
-}
-.footerr__social-icon {
 }
 
 
