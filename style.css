@@ -328,8 +328,6 @@ body {
 
 /*  =================================  */
 
-.partners {
-}
 .partners__container {
   margin: auto;
   display: flex;
@@ -391,8 +389,6 @@ body {
 
 /*  ===========================  */
 
-.testimonials {
-}
 .testimonials__container {
   padding: calc(100px * var(--divider)) 0;
   text-align: center;
@@ -437,8 +433,7 @@ body {
 
 /*    */
 
-.pricing {
-}
+
 .pricing__container {
   padding: 100px 0;
   background-color: var(--price__bckg);
@@ -734,10 +729,9 @@ body {
   display: flex;
   align-items: center;
   height: 80px;
+  gap:24px;
 }
-.footer__social-link:nth-child(2) {
-  margin: 0 24px;
-}
+
 
 
 
