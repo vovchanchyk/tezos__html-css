@@ -1,20 +1,4 @@
-.feature__container {
-  gap: 50px;
-}
-.feature__description {
-  margin: 0 auto 0px;
-}
 
-.features__items {
-  order: 1;
-  gap: 75px;
-  margin: 0px;
-}
-
-.video {
-  padding: 0;
-  margin: 0;
-}
 
 /* hero */
 .hero__container {
@@ -183,12 +167,5 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 540px) {
-  .header {
-  }
-  .header__head {
-    padding: 0 10px;
-  }
 
-}
 

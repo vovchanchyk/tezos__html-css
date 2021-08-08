@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <!-- <header class="header">
     <div class="header__container">
       <div class="header__head">
         <img src="./imgs/header/logo/Rectangle 4.svg" alt="" class="header__logo" />
@@ -73,58 +73,106 @@
         <button class="header__btn btn">Try For Free</button>
       </div>
     </div>
+  </header> -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__head">
+        <button class="header__burger">
+          <img src="./imgs/header/burger.svg" alt="mobile-menu" class="header__burger-img" />
+        </button>
+        <nav class="header__nav">
+          <a href="#home" class="header__nav-link">Home</a>
+          <a href="#product" class="header__nav-link">Product</a>
+          <a href="#prising" class="header__nav-link">Prising</a>
+          <a href="#about" class="header__nav-link">About</a>
+          <a href="#contact" class="header__nav-link">Contact</a>
+          <nav class="header__nav-socials socials">
+            <a href="#" class="socials__link">
+              <img src="./imgs/social/tv.svg" alt="" class="socials__icon" />
+            </a>
+            <a href="#" class="socials__link">
+              <img src="./imgs/social/fb.svg" alt="" class="socials__icon" />
+            </a>
+            <a href="#" class="socials__link">
+              <img src="./imgs/social/in.svg" alt="" class="socials__icon" />
+            </a>
+          </nav>
+        </nav>
+        <img src="./imgs/header/logo/Rectangle 4.svg" alt="" class="header__logo">
+        <nav class="header__socials socials">
+          <a href="#" class="header__social-link">
+            <img src="./imgs/social/tv.svg" alt="" class="header__social-icon" />
+          </a>
+          <a href="#" class="header__social-link">
+            <img src="./imgs/social/fb.svg" alt="" class="header__social-icon" />
+          </a>
+          <a href="#" class="header__social-link">
+            <img src="./imgs/social/in.svg" alt="" class="header__social-icon" />
+          </a>
+        </nav>
+      </div>
+      <div class="header__body">
+        <hgroup class="header__description description">
+          <h1 class="description__title description__title--lg">The best products start with Figma</h1>
+          <h4 class="description__subtitle">
+            Most calendars are designed for teams. <span class="description__subtitle--lg">Slate is designed for
+              freelancers</span>
+          </h4>
+        </hgroup>
+        <button class="header__btn btn">Try For Free</button>
+
+      </div>
+    </div>
   </header>
+
   <section class="feature">
     <div class="feature__container">
-      <section class="feature__description">
-        <h2 class="feature__title">Features</h2>
-        <h4 class="feature__subtitle">
-          Most calendars are designed for teams. Slate is designed for
-          freelancers
+      <hgroup class="feature__description description">
+        <h2 class="description__title">
+          Features
+        </h2>
+        <h4 class="description__subtitle">
+          Most calendars are designed for teams.
+          <span class="description__subtitle--lg">Slate is designed for freelancers</span>
         </h4>
-      </section>
-      <section class="features__items">
-        <section class="features__item item">
-          <img src="./imgs/features/icons/drawing.svg" alt="" class="item__img" />
-          <h3 class="item__title">OpenType features Variable fonts</h3>
-          <p class="item__text">
-            Slate helps you see how
-            many more days you need
-            to work to reach your
-            financial goal.
+      </hgroup>
+      <div class="feature__items">
+        <div class="feature__item feature-item">
+          <img src="./imgs/features/icons/drawing.svg" alt="" class="feature-item__img" />
+          <h3 class="feature-item__title">OpenType features Variable fonts</h3>
+          <p class="feature-item__text">
+            Slate helps you see how many more days you need to work to reach
+            your financial gfeature-item
           </p>
-        </section>
-        <section class="features__item item">
-          <img src="./imgs/features/icons/draw.svg" alt="" class="item__img" />
-          <h3 class="item__title">Design with real data</h3>
-          <p class="item__text">
-            Slate helps you see how
-            many more days you need
-            to work to reach your
-            financial goal.
+        </div>
+        <div class="feature__item feature-item">
+          <img src="./imgs/features/icons/draw.svg" alt="" class="feature-item__img" />
+          <h3 class="feature-item__title">Design with real data</h3>
+          <p class="feature-item__text">
+            Slate helps you see how many more days you need to work to reach
+            your financial goal.
           </p>
-        </section>
-        <section class="features__item item">
-          <img src="./imgs/features/icons/brush.svg" alt="" class="item__img" />
-          <h3 class="item__title">Fastest way to
-            take action</h3>
-          <p class="item__text">
-            Slate helps you see how
-            many more days you need
-            to work to reach your
-            financial goal.
+        </div>
+        <div class="feature__item feature-item">
+          <img src="./imgs/features/icons/brush.svg" alt="" class="feature-item__img" />
+          <h3 class="feature-item__title">Fastest way to take action</h3>
+          <p class="feature-item__text">
+            Slate helps you see how many more days you need to work to reach
+            your financial goal.
           </p>
-        </section>
-      </section>
-      <section class="features__video video">
+        </div>
+      </div>
+      <div class="feature__video video">
         <video class="video__player" poster="./imgs/features/videoscreen/screen.png" src="#">
         </video>
         <button class="video__btn">
-          <img src="./imgs/features/videoscreen/btn/btnarrow.svg" alt="" class="video__arrow">
+          <img src="./imgs/features/videoscreen/btn/btnarrow.svg" alt="video" class="video__arrow"
+            rel="noopener noreferrer">
         </button>
-      </section>
+      </div>
     </div>
   </section>
+
   <section class="hero">
     <div class="hero__container">
       <div class="hero__column">
@@ -421,9 +469,10 @@
       <div class="contacts__text">
         <h2 class="contacts__title">Contact Us</h2>
         <h4 class="contacts__subtitle">
-          Most calendars are designed for teams. <span class="contacts__subtitle--lg"> Slate is designed for freelancers</span>
+          Most calendars are designed for teams. <span class="contacts__subtitle--lg"> Slate is designed for
+            freelancers</span>
         </h4>
-      </div>  
+      </div>
       <form action="#" class="contacts__form form">
         <div class="form__container">
           <h3 class="form__title">Contact Us</h3>
