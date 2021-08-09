@@ -5,75 +5,14 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Figmaland</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="./tablet.css" media="only screen and (max-width:992px)" />
   <link rel="stylesheet" href="./mobile.css" media="only screen and (max-width:768px)" />
 </head>
 
 <body>
-  <!-- <header class="header">
-    <div class="header__container">
-      <div class="header__head">
-        <img src="./imgs/header/logo/Rectangle 4.svg" alt="" class="header__logo" />
-        <button class="header__burger">
-          <img src="./imgs/header/burger.svg" alt="mobile-menu" class="header__burger-img" />
-        </button>
-        <nav class="header__nav">
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link"> Home </a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link"> Product </a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link"> Pricing </a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link"> About </a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link"> Contact </a>
-          </li>
-          <li class="header__nav-item">
-            <ul class="header__social">
-              <a href="#" class="header__social-link">
-                <img src="./imgs/social/tv.svg" alt="" class="header__social-icon" />
-              </a>
-              <a href="#" class="header__social-link">
-                <img src="./imgs/social/fb.svg" alt="" class="header__social-icon" />
-              </a>
-              <a href="#" class="header__social-link">
-                <img src="./imgs/social/in.svg" alt="" class="header__social-icon" />
-              </a>
-            </ul>
-          </li>
 
-        </nav>
-        <ul class="header__social">
-          <a href="#" class="header__social-link">
-            <img src="./imgs/social/tv.svg" alt="" class="header__social-icon" />
-          </a>
-          <a href="#" class="header__social-link">
-            <img src="./imgs/social/fb.svg" alt="" class="header__social-icon" />
-          </a>
-          <a href="#" class="header__social-link">
-            <img src="./imgs/social/in.svg" alt="" class="header__social-icon" />
-          </a>
-        </ul>
-      </div>
-      <div class="header__body">
-        <hgroup class="header__description">
-          <h1 class="header__title">The best products start with Figma</h1>
-          <h4 class="header__subtitle">
-            Most calendars are designed for teams. Slate is designed for
-            freelancers
-          </h4>
-        </hgroup>
-        <button class="header__btn btn">Try For Free</button>
-      </div>
-    </div>
-  </header> -->
   <header class="header">
     <div class="header__container">
       <div class="header__head">
@@ -87,26 +26,26 @@
           <a href="#about" class="header__nav-link">About</a>
           <a href="#contact" class="header__nav-link">Contact</a>
           <nav class="header__nav-socials socials">
-            <a href="#" class="socials__link">
+            <a href="#" class="socials__link" rel="noopener noreferrer" target="_blank">
               <img src="./imgs/social/tv.svg" alt="" class="socials__icon" />
             </a>
-            <a href="#" class="socials__link">
+            <a href="#" class="socials__link" rel="noopener noreferrer" target="_blank">
               <img src="./imgs/social/fb.svg" alt="" class="socials__icon" />
             </a>
-            <a href="#" class="socials__link">
+            <a href="#" class="socials__link" rel="noopener noreferrer" target="_blank">
               <img src="./imgs/social/in.svg" alt="" class="socials__icon" />
             </a>
           </nav>
         </nav>
-        <img src="./imgs/header/logo/Rectangle 4.svg" alt="" class="header__logo">
+        <img src="./imgs/header/logo/Rectangle 4.svg" alt="logo" class="header__logo">
         <nav class="header__socials socials">
-          <a href="#" class="header__social-link">
+          <a href="#" class="header__social-link" rel="noopener noreferrer" target="_blank">
             <img src="./imgs/social/tv.svg" alt="" class="header__social-icon" />
           </a>
-          <a href="#" class="header__social-link">
+          <a href="#" class="header__social-link" rel="noopener noreferrer" target="_blank">
             <img src="./imgs/social/fb.svg" alt="" class="header__social-icon" />
           </a>
-          <a href="#" class="header__social-link">
+          <a href="#" class="header__social-link" rel="noopener noreferrer" target="_blank">
             <img src="./imgs/social/in.svg" alt="" class="header__social-icon" />
           </a>
         </nav>
@@ -176,13 +115,16 @@
   <section class="hero">
     <div class="hero__container">
       <div class="hero__column">
-        <section class="hero__description">
-          <h2 class="hero__title">Fastest way to organize</h2>
-          <h4 class="hero__subtitle">
-            Most calendars are designed for teams. Slate is designed for
+        <hgroup class="hero__description description">
+          <h2 class="description__title">Fastest way to organize</h2>
+          <h4 class="description__subtitle">
+            Most calendars are designed for teams.
+             <span class="description__subtitle--lg">
+              Slate is designed for
             freelancers
+             </span> 
           </h4>
-        </section>
+        </hgroup>
         <div class="hero__action">
           <button class="hero__btn btn">Try For Free</button>
         </div>
