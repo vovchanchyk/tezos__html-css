@@ -34,7 +34,43 @@
   font-weight: 700;
 }
 .description__subtitle {
-  text-align: center;
   font: var(--font__h4);
   padding: 7px;
+}
+.hero{
+    padding: 226px 20px;
+}
+.hero__container {
+    margin: auto;
+    width: fit-content;
+    padding: 43px 0;
+    border: solid;
+    display: grid;
+    grid-template-columns: minmax(300px,532px) minmax(20px,50px)  minmax(621px,661px);
+    
+    
+}
+.hero__left {
+    grid-column: 1/2;
+    border: solid;
+}
+.description {
+}
+.hero__description {
+    text-align: start;
+}
+.hero__right {
+    grid-column: 3/4;
+    border: solid;
+    
+}
+.hero__img {
+    max-width: 100%;
+}
+
+@media screen and (max-width:992px) {
+    .hero{
+        padding: 30px 20px;
+    }
+    
 }
