@@ -1,0 +1,23 @@
+.feature-item {
+    box-sizing: border-box;
+    text-align: center;
+    display: grid;
+    row-gap: 10px;
+    justify-items: center;
+    &__img {
+        width: 61px;
+        text-align: center;
+    }
+
+    &__title {
+      margin: 0;
+      font:  20px/28px Graphik-Bold;
+      vertical-align: middle;
+    }
+
+    &__text {
+        margin: 0;
+        font: 18px/25px Graphik-Regular;
+        vertical-align: middle;
+    }
+}

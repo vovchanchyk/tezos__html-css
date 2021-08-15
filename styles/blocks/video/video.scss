@@ -1,0 +1,31 @@
+.video {
+    
+    &__player {
+        max-width: 100%;
+    }
+    &__container{
+        position: relative;
+        
+    }
+
+    &__btn {
+        border: none;
+        background-color: rgb(64, 158, 247);
+        max-width: 300px;
+        width: 17vw;
+        max-height: 300px;
+        height: 17vw;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    &__arrow {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+}

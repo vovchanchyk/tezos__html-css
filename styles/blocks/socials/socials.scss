@@ -1,8 +1,23 @@
 .socials {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: min-content;
+    column-gap: 24px;
 
     &__link {
+        width: 40px;
+        height: 40px;
     }
 
-    &__icon {
+    &--hide--md{
+        display: none;
+        @media screen and (max-width:992px) {
+            display: grid;      
+        }
+    }
+    &--hide--sm{       
+        @media screen and (max-width:992px) {
+            display: none;          
+        }
     }
 }

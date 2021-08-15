@@ -1,4 +1,18 @@
-@import "./styles/blocks/header/header"
+@import "./styles/blocks/socials/socials";
+@import "./styles/blocks/header/header";
+@import "./styles/blocks/burger/burger.scss";
+@import "./styles/blocks/nav/nav";
+@import "./styles/blocks/description/description";
+@import "./styles/blocks/btn/btn";
+@import "./styles/blocks/socials/socials";
+@import "./styles/blocks/features/features";
+@import "./styles/blocks/feature-item/feature-item";
+@import "./styles/blocks/video/video";
 
 
 
+.margin-zero{
+    margin: 0;
+    padding: 0;
+
+}
