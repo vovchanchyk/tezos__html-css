@@ -153,8 +153,6 @@
 }
 
 .description {
-  font-family: Graphik-Regular;
-  padding: 10px;
   display: grid;
   row-gap: 7px;
   color: #252b42;
@@ -167,24 +165,23 @@
 }
 .description__title {
   margin: 0;
-  font: 48px/55px Graphik-Regular;
-  padding: 12px;
+  font: 48px/55px sans-serif;
+  padding: 12px 0;
   border: white solid;
 }
 .description__title--big {
   font-size: calc(50px + 24 * (100vw / 1777));
-  font-family: Graphik-Bold;
   line-height: 1.13em;
 }
 @media screen and (max-width: 768px) {
   .description__title--big {
-    font: 48px/55px Graphik-Regular;
+    font: 48px/55px sans-serif;
   }
 }
 .description__subtitle {
   margin: 0;
-  padding: 10px;
-  font: 28px/40px Graphik-Regular;
+  padding: 10px 0;
+  font: 28px/40px sans-serif;
 }
 @media screen and (max-width: 992px) {
   .description__subtitle--hide--md {
@@ -298,12 +295,12 @@
 }
 .feature-item__title {
   margin: 0;
-  font: 20px/28px Graphik-Bold;
+  font: 20px/28px sans-serif;
   vertical-align: middle;
 }
 .feature-item__text {
   margin: 0;
-  font: 18px/25px Graphik-Regular;
+  font: 18px/25px sans-serif;
   vertical-align: middle;
 }
 
@@ -331,6 +328,66 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.hero {
+  display: grid;
+  grid-template-rows: 269px auto 269px;
+  grid-template-columns: minmax(20px, 266.85px) minmax(420px, 532px) minmax(20px, 50px) minmax(420px, 661px) minmax(20px, 266.85px);
+  justify-content: center;
+}
+@media screen and (max-width: 992px) {
+  .hero {
+    grid-template-rows: 30px auto auto 30px;
+    grid-template-columns: 20px minmax(378px, 1fr) 20px;
+    row-gap: 59px;
+  }
+}
+.hero__left {
+  box-sizing: border-box;
+  grid-area: 2/2/3/3;
+  display: grid;
+  row-gap: 60px;
+}
+@media screen and (max-width: 992px) {
+  .hero__left {
+    padding: 50px 0 0 0;
+  }
+}
+.hero__right {
+  grid-area: 2/4/3/5;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 992px) {
+  .hero__right {
+    grid-area: 3/2/4/3;
+    padding: 0 0 50px 0;
+  }
+}
+.hero__description {
+  padding-right: 21px;
+}
+@media screen and (max-width: 992px) {
+  .hero__description {
+    text-align: center;
+    padding: 0;
+  }
+}
+.hero__btn {
+  width: 236px;
+  height: 60px;
+  align-self: flex-end;
+}
+@media screen and (max-width: 992px) {
+  .hero__btn {
+    margin: auto;
+  }
+}
+.hero__img {
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: contain;
 }
 
 .margin-zero {

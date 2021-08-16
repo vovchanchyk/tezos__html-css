@@ -1,8 +1,5 @@
 
-.description {
-    font-family: Graphik-Regular;
-    
-    padding: 10px;
+.description {    
     display: grid;
     row-gap: 7px;
     color: rgb(37, 43, 66);
@@ -16,26 +13,24 @@
 
     &__title {
        margin: 0;
-       font: 48px/55px Graphik-Regular;
-       padding: 12px;
+       font: 48px/55px sans-serif;
+       padding: 12px 0;
        border: white solid;    
     }
 
     &__title--big {
         font-size: calc(50px + 24 * (100vw / 1777));
-        font-family: Graphik-Bold;
         line-height: 1.13em;
 
         @media screen and (max-width:768px) {
-            font: 48px/55px Graphik-Regular;
-
+            font: 48px/55px sans-serif;
         }      
     }
 
     &__subtitle {
         margin: 0;
-        padding: 10px;
-        font: 28px/40px Graphik-Regular;
+        padding: 10px 0;
+        font: 28px/40px sans-serif;
     }
 
     &__subtitle--hide--md {

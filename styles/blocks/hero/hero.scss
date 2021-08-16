@@ -1,0 +1,64 @@
+.hero {
+  display: grid;
+  grid-template-rows: 269px auto 269px;
+  grid-template-columns:
+    minmax(20px, 266.85px)
+    minmax(420px, 532px)
+    minmax(20px, 50px)
+    minmax(420px, 661px)
+    minmax(20px, 266.85px);
+  justify-content: center;
+
+  @media screen and (max-width: 992px) {
+    grid-template-rows: 30px auto auto 30px;
+    grid-template-columns:
+      20px
+      minmax(378px, 1fr)
+      20px;
+    row-gap: 59px;
+  }
+
+  &__left {
+    box-sizing: border-box;
+    grid-area: 2/2/3/3;
+    display: grid;
+    row-gap: 60px;
+    @media screen and (max-width: 992px) {
+      padding: 50px 0 0 0;
+    }
+  }
+
+  &__right {
+    grid-area: 2/4/3/5;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 992px) {
+      grid-area: 3/2/4/3;
+      padding: 0 0 50px 0;
+
+    }
+  }
+  &__description {
+    padding-right: 21px;
+    @media screen and (max-width: 992px) {
+      text-align: center;
+      padding: 0;
+    }
+  }
+
+  &__btn {
+    width: 236px;
+    height: 60px;
+    align-self: flex-end;
+    @media screen and (max-width: 992px) {
+      margin: auto;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: contain;
+  }
+}
