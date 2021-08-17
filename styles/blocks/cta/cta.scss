@@ -1,57 +1,100 @@
 .cta {
-
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+  }
+  &__container {
+    max-width: 1440px;
+    margin: auto;
     display: grid;
-    grid-template-columns: 1fr 854px 50px 544px 1fr;
+    grid-template-columns:
+      minmax(355px, 795px)
+      minmax(20px, 113px)
+      minmax(293px, 484px);
+    grid-template-rows: 69px auto auto 69px;
+    row-gap: 15px;
 
-    &__img {
-
+    @media screen and (max-width: 992px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto ;
+      row-gap: 59px;
+      padding: 80px 23px;
     }
+  }
 
-    &__description {
-    }
+  &__image {
+    grid-column: 1/2;
+    grid-row: 2 / span 3;
+    max-width: 100%;
+    align-self: center;
 
-    &__subtitle-desctop {
+    @media screen and (max-width: 992px) {
+      grid-column: 1/2;
+      grid-row: 2 / span 1;
     }
+  }
 
-    &__subtitle-mobile {
-    }
+  &__description {
+    grid-column: 3/4;
+    grid-row: 2 / span 1;
+    display: grid;
+    align-content: flex-end;
+    padding: 0 10px;
 
-    &__description-mobile {
+    @media screen and (max-width: 992px) {
+      text-align: center;
+      grid-column: 1/2;
+      grid-row: 1 / span 1;
     }
+  }
 
-    &__action {
-    }
+  &__title {
+    font: 20px/28px sans-serif;
+    font-weight: 700;
+  }
 
-    &__action-title {
-    }
+  &__subtitle {
+    font: 49px/55px sans-serif;
+  }
 
-    &__action-description {
-    }
+  &__form {
+    grid-column: 3/4;
+    grid-row: 3 / span 1;
 
-    &__form {
+    @media screen and (max-width: 992px) {
+      grid-column: 1/2;
+      grid-row: 3 / span 1;
+      text-align: center;
     }
+  }
 
-    &__input {
-    }
+  &__form-row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    column-gap: 12px;
+    padding: 34px 10px;
 
-    &__submit {
+    @media screen and (max-width: 992px) {
+      justify-content: center;
     }
-}
-.description {
+  }
 
-    &__title {
+  &__input {
+    height: 58px;
+    flex: 1 0 273px;
+    @media screen and (max-width: 992px) {
+      flex: 0 1 353px;
     }
+  }
 
-    &__title--small {
-    }
+  &__submit {
+    height: 58px;
+    flex: 1 0 173px;
 
-    &__title--bold {
+    @media screen and (max-width: 992px) {
+      flex: 0 1 353px;
     }
-
-    &__subtitle {
-    }
-}
-.input {
-}
-.btn {
+  }
 }

@@ -1,0 +1,22 @@
+.form {
+
+    &__title {
+      font: 20px/28px sans-serif;
+    }
+  
+    &__subtitle {
+      font: 18px/25px sans-serif; 
+    }
+
+    &__input{
+        box-sizing: border-box;
+        border-radius: 50px;
+        background: #F4F4F4;
+        border-radius: 50px;
+        padding: 19px 20px;
+        font: 16px/19px sans-serif;
+        outline: none;
+        letter-spacing: 0.2;
+    }
+
+  }
