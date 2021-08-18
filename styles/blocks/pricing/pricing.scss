@@ -1,0 +1,52 @@
+.pricing {
+  * {
+    margin: 0;
+    list-style: none;  
+  }
+  background-color: rgb(37, 43, 66);
+  display: grid;
+  grid-template-columns:
+    minmax(20px, 1fr)
+    minmax(min-content, 1105px)
+    minmax(20px, 1fr);
+  grid-template-rows: 20px auto auto 20px;
+  text-align: center;
+  row-gap: 80px;
+
+  &__description {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    color: white;
+    max-width: 552px;
+    margin: auto;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3 2, 335px 1fr);
+    grid-column: 2/3;
+    grid-row: 3/4;
+    align-items: center;
+
+    @media screen and (max-width: 992px) {
+      padding: 18px 13.5px;
+      grid-template-columns: 335px;
+      justify-content: center;
+      grid-template-rows: auto auto auto;
+      row-gap: 50px;
+    }
+  }
+
+  &__item {
+    padding: 40px 0;
+    @media screen and (min-width: 992px) {
+      @each $i, $start in (1: 1, 2: 3, 3: 5) {
+        @debug $start;
+        @debug $i;
+        &:nth-child(#{$i}) {
+          grid-column: $start/ span 1;
+        }
+      }
+    }
+  }
+}
