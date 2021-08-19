@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: 1fr minmax(318px, 1210px) 1fr;
   grid-template-rows: auto auto;
-  background: conic-gradient(from -70deg at 50% 90%, rgba(0, 0, 0, 0.1) -70deg 140deg, white 140deg), url("../imgs/header/80b7ece24a3d47292461f8e199ffdd36.jfif") no-repeat 50%/cover;
+  background: conic-gradient(from -70deg at 50% 90%, rgba(0, 0, 0, 0.1) -70deg 140deg, white 140deg), url("/imgs/header/80b7ece24a3d47292461f8e199ffdd36.jfif") no-repeat 50%/cover;
 }
 .header__head {
   display: grid;
