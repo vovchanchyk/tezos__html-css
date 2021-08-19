@@ -1,4 +1,9 @@
+@import "/fonts/_stylesheet.css";
 .footer {
     font-family: Graphik;
+    
+    &__list-title {
+        font-family: Graphik-Bold;
+    }
 }
 

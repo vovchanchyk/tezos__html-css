@@ -1,0 +1,17 @@
+.socials{
+    column-gap: 14px;
+    &__link {
+        padding: 10px;
+        border-radius: 2px;
+       &:hover{
+        background-color: rgba(22, 24, 22, 0.7);
+       }
+    }
+
+    &__link--light-hover {
+      
+       &:hover{
+        background-color: rgba(255, 255, 255, 0.7);
+       }
+    }
+}

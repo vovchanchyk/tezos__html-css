@@ -51,7 +51,7 @@
     align-content: flex-end;
     padding: 0 10px;
     row-gap: 7px;
-
+ 
     @media screen and (max-width: 992px) {
       text-align: center;
       grid-column: 1/2;
@@ -93,7 +93,7 @@
   }
 
   &__input {
-    height: 58px;
+   
     flex: 1 0 273px;
     @media screen and (max-width: 992px) {
       flex: 0 1 353px;
@@ -101,7 +101,6 @@
   }
 
   &__submit {
-    height: 58px;
     flex: 1 0 173px;
 
     @media screen and (max-width: 992px) {
