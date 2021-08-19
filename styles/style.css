@@ -228,7 +228,7 @@
 }
 
 .socials {
-  column-gap: 14px;
+  column-gap: 4px;
 }
 .socials__link {
   padding: 10px;
@@ -236,6 +236,9 @@
 }
 .socials__link:hover {
   background-color: rgba(22, 24, 22, 0.7);
+}
+.socials__link--light-hover {
+  border: solid;
 }
 .socials__link--light-hover:hover {
   background-color: rgba(255, 255, 255, 0.7);
