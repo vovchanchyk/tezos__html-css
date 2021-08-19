@@ -1,0 +1,29 @@
+@mixin font($size,$height,$weight) {
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+}
+
+.feature-item {
+    *{
+        margin: 0;
+    }
+    box-sizing: border-box;
+    text-align: center;
+    display: grid;
+    row-gap: 10px;
+    justify-items: center;
+    font-family: sans-serif;
+    &__img {
+        width: 61px;
+        text-align: center;
+    }
+
+    &__title {    
+      @include font(20px,28px ,700 )
+    }
+
+    &__text {   
+        @include font(18px,25px ,400 )
+    }
+}

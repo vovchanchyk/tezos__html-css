@@ -1,0 +1,12 @@
+.price-card {
+    font-family: Graphik;
+
+    &__title {
+        font-family: Graphik-Bold;
+    }
+    &__value{
+        @extend .price-card__title;
+    }
+
+}
+

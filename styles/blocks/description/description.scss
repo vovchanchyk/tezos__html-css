@@ -1,0 +1,48 @@
+
+@mixin font ($size,$height,$weight) {
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+}
+
+
+.description {    
+    *{
+        margin: 0;
+    }
+
+    box-sizing: border-box;
+    display: grid;
+    row-gap: 7px;
+    color: rgb(37, 43, 66);
+    font-family: sans-serif;
+
+    &--color--white{
+        color: #fff;
+    }
+    &--center{
+        text-align: center;
+    }
+
+    &__title {
+       @include font(48px,55px,400);
+       padding: 12px 10px;   
+    }
+
+    &__title--big {
+        font-size: calc(50px + 24 * (100vw / 1777));
+        line-height: 1.13em;
+        @media screen and (max-width:768px) {
+            @include font(48px,55px,400);          
+        }      
+    }
+    &__subtitle {
+        padding: 10px 0; 
+        @include font(28px,40px,400); 
+    }
+    &__subtitle--hide--md {
+        @media screen and (max-width:992px) {
+            display: none;
+        }
+    }
+}

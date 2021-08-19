@@ -1,0 +1,76 @@
+@mixin font ($size,$height,$weight) {
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight; 
+  }
+
+.price-card {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: rgba(55, 71, 84, 1);
+    justify-content: center;
+    font-family: sans-serif;
+
+    &--primary{
+        padding-top: 83px;
+        padding-bottom: 83px;
+        background-color: rgba(32, 145, 249, 1);
+        box-sizing: content-box;
+        color: #fff;    
+    }
+
+    &__title {
+        @include font(20px,28px,700 );      
+    }
+
+    &__subtitle {
+       @include font(16px,23px,400 ); 
+    }
+
+    &__cost {
+        display: grid; 
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        column-gap: 10px;
+    }
+
+    &__value {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        @include font(74px,84px,700 ); 
+        text-align: end;
+    }
+
+    &__currency {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        @include font(20px,28px,700 ); 
+        text-align: start;
+        align-self: flex-end;
+    }
+
+    &__term {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        @include font(16px,23px,400); 
+        text-align: start;
+    }
+
+    &__features {
+        padding: 0;
+    }
+
+    &__feature {  
+        @include font(15px,28px,400 ); 
+        padding: 10px;
+    }
+
+    &__btn {
+        width: 255px;
+        height: 56px;
+    }
+}
+

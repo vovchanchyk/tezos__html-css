@@ -1,0 +1,46 @@
+@import "./blocks/socials/socials";
+@import "./blocks/header/header";
+@import "./blocks/burger/burger.scss";
+@import "./blocks/nav/nav";
+
+@import "./blocks/description/description";
+@import "./level-2/blocks/description/description";
+
+@import "./blocks/btn/btn";
+@import "./level-2/blocks/btn/btn";
+
+@import "./blocks/socials/socials";
+@import "./blocks/features/features";
+@import "./blocks/feature-item/feature-item";
+@import "./level-2/blocks/feature-item/feature-item";
+
+@import "./blocks/video/video";
+@import "./blocks/hero/hero";
+@import "./blocks/cta/cta";
+
+@import "./blocks/form/form";
+@import "./level-2/blocks/form/form";
+
+@import "./blocks/partners/partners";
+@import "./blocks/testimonials/testemonials";
+@import "./blocks/pricing/pricing";
+
+@import "./blocks/pricing-card/pricing-card";
+@import "./level-2/blocks/pricing-card/pricing-card";
+
+@import "./blocks/contact/contact";
+@import "./blocks/footer/footer";
+@import "./level-2/blocks/footer/footer";
+
+
+
+@import "./blocks/mobile-show/mobile-show";
+@import "./blocks/desctop-show/desctop-show";
+
+
+
+.margin-zero{
+    margin: 0;
+    padding: 0;
+    min-width: 350px;
+}

@@ -1,0 +1,38 @@
+.nav {
+  box-sizing: border-box;
+  font: 15px/28px 'Roboto', sans-serif; 
+  color: #fff;
+  @media screen and (max-width:992px) {
+    display: none;
+    justify-content: flex-start;
+    
+  }
+
+  &__list {
+    list-style: none; 
+    display: grid; 
+    grid-auto-flow: column;   
+    padding: 0;
+    margin: 0;
+    @media screen and (max-width:992px){
+      grid-auto-flow: row;  
+    }
+  }
+
+  &__item {
+    padding: 10px;
+    text-align: center;
+    &:hover{
+      background-color: rgba(22, 24, 22, 0.7);
+    }
+    @media screen and (max-width:992px){
+      text-align: start;  
+    }
+
+  }
+  &__link {
+    text-decoration: none;
+    color: currentColor;
+  }
+
+}

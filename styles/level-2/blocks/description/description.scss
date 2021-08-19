@@ -1,0 +1,11 @@
+@import "/styles/fonts/_stylesheet.css";
+
+.description {
+  font-family: Graphik;
+  &__title--big {
+    font-family: Graphik-Bold;
+    @media screen and (max-width: 768px) {
+      font-family: Graphik;
+    }
+  }
+}
