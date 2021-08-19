@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: 1fr minmax(318px, 1210px) 1fr;
   grid-template-rows: auto auto;
-  background: conic-gradient(from -70deg at 50% 90%, rgba(0, 0, 0, 0.1) -70deg 140deg, white 140deg), url("/imgs/header/80b7ece24a3d47292461f8e199ffdd36.jfif") no-repeat 50%/cover;
+  background: conic-gradient(from -70deg at 50% 90%, rgba(0, 0, 0, 0.1) -70deg 140deg, white 140deg), url("../../../imgs/header/80b7ece24a3d47292461f8e199ffdd36.jfif") no-repeat 50%/cover;
 }
 .header__head {
   display: grid;
@@ -228,17 +228,14 @@
 }
 
 .socials {
-  column-gap: 4px;
+  column-gap: 20px;
 }
 .socials__link {
-  padding: 10px;
+  padding: 2px;
   border-radius: 2px;
 }
 .socials__link:hover {
   background-color: rgba(22, 24, 22, 0.7);
-}
-.socials__link--light-hover {
-  border: solid;
 }
 .socials__link--light-hover:hover {
   background-color: rgba(255, 255, 255, 0.7);
