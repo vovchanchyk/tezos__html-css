@@ -6,12 +6,15 @@
   grid-template-rows: auto auto;
   background: conic-gradient(from -70deg at 50% 90%, rgba(0, 0, 0, 0.1) -70deg 140deg, white 140deg), url("./imgs/header/80b7ece24a3d47292461f8e199ffdd36.jfif") no-repeat 50%/cover;
 }
+.header * {
+  box-sizing: border-box;
+}
 .header__head {
   display: grid;
   grid-template-columns: 1fr 246px 1fr;
   grid-area: 1/2/2/3;
   align-items: center;
-  padding: 53px 40px;
+  padding: 39px 40px;
   position: relative;
 }
 @media screen and (max-width: 992px) {
@@ -46,6 +49,7 @@
 }
 .header__logo {
   width: 100%;
+  padding: 0 20px;
 }
 @media screen and (max-width: 992px) {
   .header__logo {
@@ -174,15 +178,15 @@
 
 @font-face {
   font-family: "Graphik-Bold";
-  src: url("./fonts/Graphik-Bold.eot");
-  src: local("Graphik Bold"), local("Graphik-Bold"), url("./fonts/Graphik-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/Graphik-Bold.woff2") format("woff2"), url("./fonts/Graphik-Bold.woff") format("woff"), url("./fonts/Graphik-Bold.ttf") format("truetype");
+  src: url("/fonts/Graphik-Bold.eot");
+  src: local("Graphik Bold"), local("Graphik-Bold"), url("/fonts/Graphik-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Graphik-Bold.woff2") format("woff2"), url("/fonts/Graphik-Bold.woff") format("woff"), url("/fonts/Graphik-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Graphik";
-  src: url("./fonts/Graphik-Regular.eot");
-  src: local("Graphik Regular"), local("Graphik-Regular"), url("./fonts/Graphik-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/Graphik-Regular.woff2") format("woff2"), url("./fonts/Graphik-Regular.woff") format("woff"), url("./fonts/Graphik-Regular.ttf") format("truetype");
+  src: url("/fonts/Graphik-Regular.eot");
+  src: local("Graphik Regular"), local("Graphik-Regular"), url("/fonts/Graphik-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Graphik-Regular.woff2") format("woff2"), url("/fonts/Graphik-Regular.woff") format("woff"), url("/fonts/Graphik-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

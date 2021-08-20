@@ -1,4 +1,9 @@
 .header {
+
+  *{
+    box-sizing: border-box;
+  }
+
   box-sizing: border-box;
   text-align: center;
   display: grid;
@@ -16,7 +21,7 @@
     grid-template-columns: 1fr 246px 1fr;
     grid-area: 1/2/2/3;
     align-items: center;
-    padding: 53px 40px;
+    padding: 39px 40px;
     position: relative;
 
     @media screen and (max-width:992px) {
@@ -53,6 +58,7 @@
 
   &__logo {
     width: 100%;
+    padding: 0 20px;
     @media screen and (max-width:992px) {
       display: block;
       grid-column: 1/2;
