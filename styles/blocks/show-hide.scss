@@ -1,0 +1,15 @@
+.show-lg-max{
+ 
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+
+  }
+
+  .show-lg-min{
+    display: none;
+    @media screen and (max-width: 992px) {
+      display: block;
+    }
+
+  }

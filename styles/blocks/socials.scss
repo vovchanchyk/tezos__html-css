@@ -1,0 +1,15 @@
+.socials {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: min-content;
+    column-gap: 24px;
+    &__link {
+        width: 40.99px;
+        height: 40.99px;
+        @extend %position-center;
+    }
+    &__icon{
+        height: 32px;
+        display: block;
+    }
+}

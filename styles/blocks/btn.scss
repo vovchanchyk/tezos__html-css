@@ -1,0 +1,16 @@
+.btn {
+  color: white;
+  padding: 16px 63.2px;
+  font-family: Graphic;
+  background-color: rgb(64, 158, 247);
+  border-radius: 50px;
+  @include font(20px, 28px, 400);
+  @extend %position-center; 
+  @include hover(rgb(64, 158, 247));
+
+
+  &--f--700{
+      font-weight: 700;
+      padding: 16px 59px;
+  }
+}

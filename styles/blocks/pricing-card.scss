@@ -18,9 +18,16 @@
     &--primary{
         padding-top: 83px;
         padding-bottom: 83px;
-        background-color: rgba(32, 145, 249, 1);
+        background-color: $blue-color;
         box-sizing: content-box;
         color: #fff;    
+        button{
+            background-color: #fff;
+            color: $blue-color;
+            &:hover{
+                color: #fff;
+            }
+        }
     }
 
     &__title {
@@ -73,6 +80,7 @@
     &__btn {
         width: 255px;
         height: 56px;
+    
     }
 }
 

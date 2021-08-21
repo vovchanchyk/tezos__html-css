@@ -10,7 +10,7 @@
 </head>
 
 <body class="margin-zero">
-  <header class="header">
+  <header class="header" id="header">
     <div class="header__head">
       <button class="burger header__burger">
         <img src="./imgs/header/burger.svg" alt="" class="burger__icon" />
@@ -18,50 +18,52 @@
       <nav class="header__nav nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#home" target="_blank" rel="noopener noreferrer" class="nav__link">Home</a>
+            <a href="#home"  class="nav__link">Home</a>
           </li>
           <li class="nav__item">
-            <a href="#product" target="_blank" rel="noopener noreferrer" class="nav__link">Product</a>
+            <a href="#hero"  class="nav__link">Product</a>
           </li>
           <li class="nav__item">
-            <a href="#pricing" target="_blank" rel="noopener noreferrer" class="nav__link">Pricing</a>
+            <a href="#pricing"  class="nav__link">Pricing</a>
           </li>
           <li class="nav__item">
-            <a href="#about" target="_blank" rel="noopener noreferrer" class="nav__link">About</a>
+            <a href="#about"  class="nav__link">About</a>
           </li>
           <li class="nav__item">
-            <a href="#contacts" target="_blank" rel="noopener noreferrer" class="nav__link">Contacts</a>
+            <a href="#contact"  class="nav__link">Contact</a>
           </li>
-          <li class="nav__item socials mobile-show">
-            <a href="#" target="_blank" rel="noopener noreferrer" class="socials__link" rel="noopener noreferrer"
-              target="_blank">
-              <img src="./imgs/social/tv.svg" alt="twitter" class="socials__icon" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" class="socials__link" rel="noopener noreferrer"
-              target="_blank">
-              <img src="./imgs/social/fb.svg" alt="fb" class="socials__icon" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" class="socials__link" rel="noopener noreferrer"
-              target="_blank">
-              <img src="./imgs/social/in.svg" alt="linkedin" class="socials__icon" />
-            </a>
+          <li class="nav__item show-lg-min">
+            <nav class=" socials">
+              <a href="https://twitter.com/?lang=ru" target="_blank" rel="noopener noreferrer" class="socials__link" rel="noopener noreferrer"
+                target="_blank">
+                <img src="./imgs/social/tv.svg" alt="twitter link" class="socials__icon" />
+              </a>
+              <a href="https://uk-ua.facebook.com/" target="_blank" rel="noopener noreferrer" class="socials__link" rel="noopener noreferrer"
+                target="_blank">
+                <img src="./imgs/social/fb.svg" alt="fb link" class="socials__icon" />
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="socials__link" rel="noopener noreferrer"
+                target="_blank">
+                <img src="./imgs/social/in.svg" alt="linkedin link" class="socials__icon" />
+              </a>
+            </nav>
           </li>
         </ul>
       </nav>
-      <img src="./imgs/header/logo/Rectangle 4.svg" alt="logo" class="header__logo" />
+      <img src="./imgs/header/logo/Rectangle 4.svg" alt="logo img" name="rectangle logo" class="header__logo" />
 
-      <nav class="header__socials socials desctop-show">
-        <a href="#" target="_blank" rel="noopener noreferrer" class="socials__link" rel="noopener noreferrer"
+      <nav class="header__socials socials show-lg-max">
+        <a href="https://twitter.com/?lang=ru" target="_blank" rel="noopener noreferrer" class="socials__link" rel="noopener noreferrer"
           target="_blank">
-          <img src="./imgs/social/tv.svg" alt="twitter icon" class="socials__icon" />
+          <img src="./imgs/social/tv.svg" alt="twitter link" class="socials__icon" />
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer" class="socials__link" rel="noopener noreferrer"
+        <a href="https://uk-ua.facebook.com/" target="_blank" rel="noopener noreferrer" class="socials__link" rel="noopener noreferrer"
           target="_blank">
-          <img src="./imgs/social/fb.svg" alt="fb icon" class="socials__icon" />
+          <img src="./imgs/social/fb.svg" alt="fb link" class="socials__icon" />
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer" class="socials__link" rel="noopener noreferrer"
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="socials__link" rel="noopener noreferrer"
           target="_blank">
-          <img src="./imgs/social/in.svg" alt="linkedin icon" class="socials__icon" />
+          <img src="./imgs/social/in.svg" alt="linkedin link" class="socials__icon" />
         </a>
       </nav>
     </div>
@@ -82,7 +84,7 @@
     </div>
   </header>
 
-  <section class="features">
+  <section class="features" id="about" >
     <hgroup class="description features__description description--center">
       <h2 class="description__title">Features</h2>
       <h4 class="description__subtitle">
@@ -129,7 +131,7 @@
     </div>
   </section>
 
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="hero__left">
       <hgroup class="hero__description description">
         <h2 class="description__title">Fastest way to organize</h2>
@@ -140,7 +142,7 @@
           </span>
         </h4>
       </hgroup>
-      <button class="btn hero__btn">Try For Free</button>
+      <button class="btn hero__btn btn--f--700">Try For Free</button>
     </div>
     <div class="hero__right">
       <img src="./imgs/hero/@ Macbook Pro.png" name="image Macbook pro" alt="image macbook" class="hero__img" />
@@ -153,14 +155,14 @@
 
       <hgroup class="cta__description description">
         <h3 class="cta__title">At your fingertips</h3>
-        <h2 class="description__title desctop-show">
+        <h2 class="description__title show-lg-max">
           Lightning fast prototyping
         </h2>
-        <h2 class="description__title mobile-show">Newsletter</h2>
-        <h4 class="cta__text mobile-show">
+        <h2 class="description__title show-lg-min">Newsletter</h2>
+        <p class="cta__text show-lg-min">
           Most calendars are designed for teams. Slate is designed for
           freelancers
-        </h4>
+        </p>
       </hgroup>
       <form action="#" class="form cta__form">
         <h3 class="cta__title">Subscribe to our Newsletter</h3>
@@ -264,7 +266,7 @@
     <button class="testimonials__btn btn">More Testimonials</button>
   </section>
 
-  <section class="pricing">
+  <section class="pricing" id="pricing">
     <hgroup class="pricing__description description">
       <h2 class="description__title">Pricing</h2>
       <h4 class="description__subtitle">
@@ -339,7 +341,7 @@
     </div>
   </section>
 
-  <section class="contact">
+  <section class="contact" id="contact">
     <hgroup class="contact__description description">
       <h2 class="description__title">Contact Us</h2>
       <h4 class="description__subtitle">
@@ -377,17 +379,17 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2544.1751457208597!2d30.456271315728888!3d50.38193347946601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8e2b597354b%3A0xb35706d9d0d479bc!2zU3BvcnQgTGlmZSDQotC10YDQtdC80LrQuA!5e0!3m2!1sru!2sua!4v1627322230183!5m2!1sru!2sua"
         style="border: 0" allowfullscreen="" loading="lazy"></iframe>
       <nav class="contact__socials socials">
-        <a href="#" target="_blank" rel="noopener noreferrer" class="socials__link" rel="noopener noreferrer"
+        <a href="https://twitter.com/?lang=ru" target="_blank" rel="noopener noreferrer" class="socials__link" rel="noopener noreferrer"
           target="_blank">
-          <img src="./imgs/social/bluetw.svg" alt="" class="socials__icon" />
+          <img src="./imgs/social/bluetw.svg" alt="twitter link" class="socials__icon" />
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer" class="socials__link" rel="noopener noreferrer"
+        <a href="https://uk-ua.facebook.com/" target="_blank" rel="noopener noreferrer" class="socials__link" rel="noopener noreferrer"
           target="_blank">
-          <img src="./imgs/social/bluefb.svg" alt="" class="socials__icon" />
+          <img src="./imgs/social/bluefb.svg" alt="fb link" class="socials__icon" />
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer" class="socials__link" rel="noopener noreferrer"
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="socials__link" rel="noopener noreferrer"
           target="_blank">
-          <img src="./imgs/social/bluein.svg" alt="" class="socials__icon" />
+          <img src="./imgs/social/bluein.svg" alt="linkedin link" class="socials__icon" />
         </a>
       </nav>
     </div>
@@ -503,17 +505,17 @@
         </div>
       </div>
       <nav class="footer__socials socials">
-        <a href="#" target="_blank" rel="noopener noreferrer" class="socials__link socials__link--light-hover" rel="noopener noreferrer"
+        <a href="https://twitter.com/?lang=ru" target="_blank" rel="noopener noreferrer" class="socials__link" rel="noopener noreferrer"
           target="_blank">
-          <img src="./imgs/social/tv.svg" alt="twitter icon" class="socials__icon" />
+          <img src="./imgs/social/bluetw.svg" alt="twitter link" class="socials__icon" />
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer" class="socials__link socials__link--light-hover" rel="noopener noreferrer"
+        <a href="https://uk-ua.facebook.com/" target="_blank" rel="noopener noreferrer" class="socials__link" rel="noopener noreferrer"
           target="_blank">
-          <img src="./imgs/social/fb.svg" alt="fb icon" class="socials__icon" />
+          <img src="./imgs/social/bluefb.svg" alt="fb link" class="socials__icon" />
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer" class="socials__link socials__link--light-hover" rel="noopener noreferrer"
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="socials__link" rel="noopener noreferrer"
           target="_blank">
-          <img src="./imgs/social/in.svg"  alt="linkedin icon" class="socials__icon" />
+          <img src="./imgs/social/bluein.svg" alt="linkedin link" class="socials__icon" />
         </a>
       </nav>
     </div>

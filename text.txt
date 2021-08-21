@@ -1,0 +1,30 @@
+
+
+
+
+
+Features - font colors
+Hs padding
+
+Too many hs
+
+Pricing: middle card button
+
+
+footer__contact: margins, font-weights
+footer__column: text alignment
+Mixin font is duplicated. Declare it once and use everywhere. Mixin file.
+Separate file for util classes
+
+More descriptive img alts
+Feature-item vs partner__item
+
+Image names
+
+
+Media queries as mixins
+
+Column-gap, row-gap in one
+
+Variables?
+Nesting props

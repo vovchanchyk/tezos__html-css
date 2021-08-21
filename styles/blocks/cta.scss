@@ -1,15 +1,6 @@
-@mixin font ($size,$height,$weight) {
-  font-size: $size;
-  line-height: $height;
-  font-weight: $weight; 
-}
 
 .cta {
-  * {
-    margin: 0;
-    box-sizing: border-box;
-    border: none;
-  }
+
   &__container {
     max-width: 1440px;
     margin: auto;

@@ -20,10 +20,12 @@
     }
 
     &__title {    
-      @include font(20px,28px ,700 )
+      @include font(20px,28px ,700 );
+      color: rgba(37, 43, 66, 1);
     }
 
     &__text {   
-        @include font(18px,25px ,400 )
+        @include font(18px,25px ,400 );
+        color:rgba(55, 71, 84, 1);
     }
 }

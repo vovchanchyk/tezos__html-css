@@ -6,11 +6,6 @@
 
 .form {
 font-family: sans-serif;
-  *{
-    margin: 0;
-    border: none;
-    outline: none;
-  }
     &__title {
       @include font(20px, 28px,700 )     
     }
@@ -31,6 +26,7 @@ font-family: sans-serif;
      
     }
     &__message {
+      padding: 23px 20px 23px 20px;
       resize: none;
       @include font(15px, 16px,400);
       background: #F4F4F4;
