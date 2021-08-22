@@ -1,16 +1,15 @@
-@mixin font ($size,$height,$weight) {
+@mixin font($size, $height, $weight) {
   font-size: $size;
   line-height: $height;
-  font-weight: $weight; 
+  font-weight: $weight;
 }
 
 .testimonials {
-  * {
-    margin: 0;
-  }
   display: grid;
   grid-template-rows: 20px auto auto auto 20px;
-  grid-template-columns: minmax(20px,1fr) minmax(276px, 987px) minmax(20px,1fr);
+  grid-template-columns: minmax(276px, 987px);
+  padding: 0 20px;
+  
   row-gap: 80px;
   justify-content: center;
   text-align: center;
@@ -18,12 +17,10 @@
 
   &__description {
     grid-row: 2/3;
-    grid-column: 2/3;
   }
 
   &__center {
     grid-row: 3/4;
-    grid-column: 2/3;
     display: grid;
     row-gap: 50px;
     justify-items: center;
@@ -35,10 +32,10 @@
 
   &__text {
     padding: 10px 0;
-    @include font(28px, 40px,400 ) ;
-    @media screen and (max-width:768px){      
-        @include font(20px, 28px,700 ) ;
-
+    @include font(28px, 40px, 400);
+    border: solid;
+    @media screen and (max-width: 768px) {
+      @include font(20px, 28px, 700);
     }
   }
 
@@ -50,15 +47,13 @@
   }
 
   &__client-text {
-    @include font(16px, 23px,400 ) ;
+    @include font(16px, 23px, 400);
     text-align: start;
   }
 
   &__btn {
     grid-row: 4/5;
-    grid-column: 2/3;
-    width: 276px;
-    height: 60px;
+    padding: 16px 48.19px;
     margin: auto;
   }
 }

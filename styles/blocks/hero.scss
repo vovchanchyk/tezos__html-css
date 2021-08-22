@@ -9,22 +9,23 @@
     minmax(20px, 266.85px);
   justify-content: center;
 
-  @media screen and (max-width: 992px) {
-    grid-template-rows: 30px auto auto 30px;
-    grid-template-columns:
-      20px
-      1fr
-      20px;
-    row-gap: 59px;
-  }
+    @include media-container-lg{
+      grid-template-rows: 30px auto auto 30px;
+      row-gap: 59px;
+    };
+
 
   &__left {
     box-sizing: border-box;
     grid-area: 2/2/3/3;
     display: grid;
     row-gap: 60px;
+    border: solid;
     @media screen and (max-width: 992px) {
       padding: 50px 0 0 0;
+      //test
+      grid-column: 1/2;
+      grid-row: 2/3;
     }
   }
 
@@ -32,15 +33,20 @@
     grid-area: 2/4/3/5;
     display: flex;
     justify-content: center;
+    border: solid;
 
     @media screen and (max-width: 992px) {
       grid-area: 3/2/4/3;
+
+      //test
+      grid-column: 1/2;
       padding: 0 0 50px 0;
 
     }
   }
   &__description {
     padding-right: 21px;
+    border: solid;
     @media screen and (max-width: 992px) {
       text-align: center;
       padding: 0;

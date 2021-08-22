@@ -6,14 +6,29 @@
 }
 
 @mixin hover($color){
-    transition: .7s;
+   
 
     &:hover{
+        transition: .7s;
         @if ($color == transparent) {
             background-color: rgba(22, 24, 22,0.7);
         }@else{
             background-color:  darken($color, 20%);
         }
+        
+    }
+    
+}
+
+@mixin media-container-lg {
+
+    @media screen and (max-width:992px) {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+        justify-content: center; 
+        
+        @content
+      
         
     }
     
