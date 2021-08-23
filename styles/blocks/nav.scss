@@ -15,6 +15,7 @@
   }
 
   &__item {
+    
     padding: 10px;
     @extend %position-center; 
     @include hover(transparent);

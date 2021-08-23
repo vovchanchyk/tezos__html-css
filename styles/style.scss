@@ -1,20 +1,20 @@
-@import "/styles/_reset.css";
-@import "./../fonts/stylesheet.scss";
+@import "./reset";
+@import "./../fonts/stylesheet";
 
-@import "./vars.scss";
-@import "./mixins.scss";
-@import "./paterns.scss";
-
-
-
-@import "./blocks/header.scss";
-@import "./blocks/burger.scss";
-@import "./blocks/nav.scss";
-
-@import "./blocks/description.scss";
+@import "./vars";
+@import "./mixins";
+@import "./paterns";
 
 
-@import "./blocks/btn.scss";
+
+@import "./blocks/header";
+@import "./blocks/burger";
+@import "./blocks/nav";
+
+@import "./blocks/description";
+
+
+@import "./blocks/btn";
 
 
 @import "./blocks/socials";
@@ -43,7 +43,7 @@
 
 
 
-@import "./blocks/show-hide.scss";
+@import "./blocks/show-hide";
 
 
 
