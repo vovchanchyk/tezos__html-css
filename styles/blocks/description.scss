@@ -2,34 +2,36 @@
 
 
 .description {    
-
-    box-sizing: border-box;
     display: grid;
     row-gap: 7px;
     color: rgb(37, 43, 66);
-    font-family: sans-serif;
+    font-family: Graphic;
 
     &--color--white{
         color: #fff;
     }
     &--center{
-        text-align: center;
+        @extend %text-center;
     }
 
     &__title {
        @include font(48px,55px,400);
-       padding: 12px 10px;   
+       padding: 10px 10px;   
+       @media screen and (max-width:375px) {
+        padding: 10px 0;
+        @include font(38px,45px,40)
+       }
     }
 
     &__title--big {
-        font-size: calc(50px + 24 * (100vw / 1777));
-        line-height: 1.13em;
+      
+        @include font($font-h1, 1.13em,700);
         @media screen and (max-width:768px) {
             @include font(48px,55px,400);          
         }      
     }
     &__subtitle {
-        padding: 10px 0; 
+        padding: 10px; 
         @include font(28px,40px,400); 
     }
     &__subtitle--hide--md {

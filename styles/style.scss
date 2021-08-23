@@ -1,9 +1,11 @@
+@import "/styles/_reset.css";
 @import "./../fonts/stylesheet.scss";
+
+@import "./vars.scss";
 @import "./mixins.scss";
 @import "./paterns.scss";
-@import "./vars.scss";
 
-@import "/styles/_reset.css";
+
 
 @import "./blocks/header.scss";
 @import "./blocks/burger.scss";

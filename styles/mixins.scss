@@ -5,31 +5,41 @@
     font-weight: $weight;
 }
 
-@mixin hover($color){
-   
 
+
+@mixin hover($color){
     &:hover{
         transition: .7s;
         @if ($color == transparent) {
             background-color: rgba(22, 24, 22,0.7);
         }@else{
             background-color:  darken($color, 20%);
-        }
-        
-    }
-    
+        }       
+    }    
 }
 
-@mixin media-container-lg {
-
-    @media screen and (max-width:992px) {
+@mixin media-container-lg($width : 992px) {
+  
+    @media screen and (max-width:$width) {
         grid-template-columns: 1fr;
         padding: 0 20px;
         justify-content: center; 
         
-        @content
-      
-        
+        @content       
     }
     
+}
+
+@mixin padding-horizontal($l, $r:$l){
+    padding : {
+        left: $l;
+        right: $r;
+    }
+}
+
+@mixin padding-vertical($t,$b:$t){
+    padding : {
+        top: $t;
+        bottom:$b;
+    }
 }
