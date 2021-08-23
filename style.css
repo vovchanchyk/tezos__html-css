@@ -89,15 +89,15 @@ h6 {
 
 @font-face {
   font-family: Graphic;
-  src: url("/fonts/Graphik-Bold.eot");
-  src: local("Graphik Bold"), local("Graphik-Bold"), url("/fonts/Graphik-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Graphik-Bold.woff2") format("woff2"), url("/fonts/Graphik-Bold.woff") format("woff"), url("/fonts/Graphik-Bold.ttf") format("truetype");
+  src: url("./fonts/Graphik-Bold.eot");
+  src: local("Graphik Bold"), local("Graphik-Bold"), url("./fonts/Graphik-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/Graphik-Bold.woff2") format("woff2"), url("./fonts/Graphik-Bold.woff") format("woff"), url("./fonts/Graphik-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: Graphic;
-  src: url("/fonts/Graphik-Regular.eot");
-  src: local("Graphik Regular"), local("Graphik-Regular"), url("/fonts/Graphik-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Graphik-Regular.woff2") format("woff2"), url("/fonts/Graphik-Regular.woff") format("woff"), url("/fonts/Graphik-Regular.ttf") format("truetype");
+  src: url("./fonts/Graphik-Regular.eot");
+  src: local("Graphik Regular"), local("Graphik-Regular"), url("./fonts/Graphik-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/Graphik-Regular.woff2") format("woff2"), url("./fonts/Graphik-Regular.woff") format("woff"), url("./fonts/Graphik-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -712,6 +712,7 @@ h6 {
   display: grid;
   grid-template-rows: 20px auto auto auto 20px;
   grid-template-columns: minmax(276px, 987px);
+  justify-content: center;
   padding: 0 20px;
   row-gap: 80px;
   font-family: Graphic;
