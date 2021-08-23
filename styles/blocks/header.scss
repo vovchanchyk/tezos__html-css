@@ -19,6 +19,7 @@
     padding: 39px 40px;    
     position: relative; 
     @media screen and (max-width:992px) {
+      margin: 0;
       grid-template-columns: auto auto;
       padding: 16px 17px;
     }
