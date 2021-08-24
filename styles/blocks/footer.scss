@@ -1,12 +1,16 @@
 
 .footer {
     background-color: rgb(37, 43, 66);
-    display: grid;
     grid-template-columns: auto minmax(20px,125px) auto;
+
+    ///
+    display: grid;
     justify-content: center;
+    font-family: Graphic;
+    ///
     padding: 150px 0;
     color: #fff;
-    font-family: Graphic;
+    
     @include media-container-lg(768px){
         padding: 107px 20px;
         row-gap: 76px;
@@ -17,17 +21,14 @@
     &__left {
         grid-column: 1/2;
         display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: minmax(150px,185px);
-        column-gap: 20px;
+        grid-template-columns: repeat(3, minmax(150px,185px));   
+        grid-gap: 73px 20px;
         padding: 0 20px;
 
         @media screen and (max-width:768px){
-            grid-auto-flow:row;
-            row-gap: 73px;
+            grid-template-columns: minmax(150px,185px);
             margin: auto;
         }
-
     }
 
     &__column {

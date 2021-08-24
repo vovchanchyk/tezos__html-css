@@ -1,11 +1,10 @@
-.video {
-    
+.video {   
     &__player {
         max-width: 100%;
+        min-width: 100%;
     }
     &__container{
-        position: relative;
-        
+        position: relative;     
     }
 
     &__btn {

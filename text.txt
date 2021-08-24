@@ -28,3 +28,20 @@ Column-gap, row-gap in one
 
 Variables?
 Nesting props
+
+
+
+mono column 
+
+double column/992 mono 
+hero
+cta 
+Features
+
+complicated, independent bloks
+
+
+
+header +
+
+

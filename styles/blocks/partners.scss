@@ -1,4 +1,5 @@
 .partners {
+ 
   display: grid;
   grid-template-columns: minmax(952px,1075px);
   grid-template-rows: 0.1px auto auto auto 0.1px;
@@ -6,6 +7,8 @@
   justify-content: center;
   font-family: Graphic;
   padding: 0 20px;
+
+
 
   @include media-container-lg{
     justify-items: center
@@ -35,7 +38,7 @@
   }
 
   &__item {
-    border: 1px solid #d8d8d8;
+    border: $border;
     flex-grow: 1;
     display: grid;
     row-gap: 15px;
@@ -52,7 +55,8 @@
   }
 
   &__item-title {
-    @include font(16px,23px,400); 
+    @include font($f-size-7,$f-height-7,400); 
+    color: $color-second;
   }
 
   &__btn {

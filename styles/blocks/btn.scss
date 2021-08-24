@@ -1,12 +1,14 @@
 .btn {
-  color: white;
+  color: #fff;
   padding: 16px 63.2px;
   font-family: Graphic;
-  background-color: rgb(64, 158, 247);
+  background-color: $blue-color;
   border-radius: 50px;
-  @include font(20px, 28px, 400);
+
+  @include font($f-size-4, $f-height-4, 400);
+
   @extend %position-center; 
-  @include hover(rgb(64, 158, 247));
+  @include hover($blue-color);
 
 
   &--f--700{

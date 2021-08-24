@@ -1,21 +1,23 @@
 
-
-
 .description {    
     display: grid;
     row-gap: 7px;
-    color: rgb(37, 43, 66);
+    color: $color;
     font-family: Graphic;
 
     &--color--white{
         color: #fff;
+
+        p{
+            color: currentColor;
+        }
     }
     &--center{
         @extend %text-center;
     }
 
     &__title {
-       @include font(48px,55px,400);
+       @include font($f-size-2,$f-height-2,400);
        padding: 10px 10px;   
        @media screen and (max-width:375px) {
         padding: 10px 0;
@@ -25,14 +27,16 @@
 
     &__title--big {
       
-        @include font($font-h1, 1.13em,700);
+        @include font($f-size-1, $f-height-1, 700);
+      
         @media screen and (max-width:768px) {
-            @include font(48px,55px,400);          
+            @include font($f-size-2,$f-height-2,400);          
         }      
     }
     &__subtitle {
         padding: 10px; 
-        @include font(28px,40px,400); 
+        @include font($f-size-3,$f-height-3,400); 
+        color: $color-second;
     }
     &__subtitle--hide--md {
         @media screen and (max-width:992px) {

@@ -1,19 +1,37 @@
 $blue-color: rgb(64, 158, 247);
-$bckg-color:#fff;
+
 $price-bckg:rgba(37, 43, 66, 1);
+
 $footer-bckg:rgba(37, 43, 66, 1);
 $drk-text:rgba(55, 71, 84, 1);
-$title-text:rgba(37, 43, 66, 1);
-$font-link:15px/28px Graphic sans-serif;
-$font__h4:28px/40px Graphic;
-$font-h2:48px/55px Graphic;
-$font-p: 18px/25px Graphic;
-$font-btn:20px/28px Graphic;
 
-$font__h3: 20px/28px Graphic;
-$input-color:#F4F4F4;
-$font__h6: 16px/23px Graphic;
-$font-field: rgba(24, 23, 29, 1) 16px/16px Graphic;
-$pricing-bckg:rgba(37, 43, 66, 1);
+$color:rgb(37, 43, 66);
+$color-second:rgba(55, 71, 84);
 
-$font-h1: calc(50px + 24 * (100vw / 1777));
+
+
+$f-size-1: calc(50px + 24 * (100vw / 1777));
+$f-height-1: 1.13em;
+
+$f-size-2:48px;
+$f-height-2:55px;
+
+$f-size-3:28px;
+$f-height-3:40px;
+
+$f-size-6:18px;
+$f-height-6:25px;
+
+$f-size-4:20px;
+$f-height-4:28px;
+
+$input-bckg:#F4F4F4;
+$border:1px solid #d8d8d8;
+
+$f-size-7: 16px;
+$f-height-7:23px;
+
+$f-size-8:15px;
+$f-height-8:16px;
+
+
