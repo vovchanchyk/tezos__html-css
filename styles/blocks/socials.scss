@@ -2,14 +2,37 @@
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: min-content;
-    column-gap: 24px;
+    column-gap: 22px;
+    position: relative;
+    
     &__link {
-        width: 40.99px;
-        height: 40.99px;
+        width: 41.99px;
+        height: 41.99px;
         @extend %position-center;
+        &:hover{
+            transition: 0.4s; 
+         }
+        &--hover--dark{
+            &:hover{
+                @include hover(transparent);
+            }
+        }
+
+        &--hover--light{
+            &:hover{     
+                @include hover(#fff);
+            }
+        }
+       
+        &--hover--shadow{
+            &:hover{
+                filter: drop-shadow(4px 4px 4px rgba(22, 24, 22,0.7));
+            }
+        }
+      
     }
     &__icon{
-        height: 32px;
+        height: 30px;
         display: block;
     }
 }

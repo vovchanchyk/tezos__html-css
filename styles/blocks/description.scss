@@ -25,10 +25,8 @@
        }
     }
 
-    &__title--big {
-      
-        @include font($f-size-1, $f-height-1, 700);
-      
+    &__title--big { 
+        @include font($f-size-1, $f-height-1, 700);   
         @media screen and (max-width:768px) {
             @include font($f-size-2,$f-height-2,400);          
         }      

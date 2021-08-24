@@ -319,14 +319,29 @@ h6 {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: min-content;
-  column-gap: 24px;
+  column-gap: 22px;
+  position: relative;
 }
 .socials__link {
-  width: 40.99px;
-  height: 40.99px;
+  width: 41.99px;
+  height: 41.99px;
+}
+.socials__link:hover {
+  transition: 0.4s;
+}
+.socials__link--hover--dark:hover:hover {
+  transition: 0.7s;
+  background-color: rgba(22, 24, 22, 0.7);
+}
+.socials__link--hover--light:hover:hover {
+  transition: 0.7s;
+  background-color: #cccccc;
+}
+.socials__link--hover--shadow:hover {
+  filter: drop-shadow(4px 4px 4px rgba(22, 24, 22, 0.7));
 }
 .socials__icon {
-  height: 32px;
+  height: 30px;
   display: block;
 }
 
@@ -501,12 +516,12 @@ h6 {
 }
 
 .cta__container {
+  display: grid;
   max-width: 1440px;
   grid-template-columns: minmax(355px, 795px) minmax(20px, 113px) minmax(293px, 484px);
   grid-template-rows: 69px auto minmax(199px, auto) 69px;
   row-gap: 15px;
   padding: 0 20px;
-  display: grid;
   margin: auto;
 }
 @media screen and (max-width: 992px) {
@@ -583,8 +598,7 @@ h6 {
 .cta__form-row {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 12px;
-  column-gap: 12px;
+  gap: 12px;
   padding: 34px 0;
 }
 @media screen and (max-width: 992px) {
