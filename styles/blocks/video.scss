@@ -2,29 +2,33 @@
     &__player {
         max-width: 100%;
         min-width: 100%;
+        border-radius: 15px;
+        object-fit: contain;
     }
     &__container{
         position: relative;     
     }
 
     &__btn {
-        border: none;
-        background-color: rgb(64, 158, 247);
-        max-width: 300px;
-        width: 17vw;
-        max-height: 300px;
-        height: 17vw;
+        width: 28.34%;
+        height: 51.55%; 
         border-radius: 50%;
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
+        background-color: $blue-color;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        cursor: pointer;
     }
 
     &__arrow {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
+        width: 80%;
+        height: 80%;
+        justify-self: flex-end;
+        align-self: center;
+        grid-area: 2/2/3/3;
     }
 }

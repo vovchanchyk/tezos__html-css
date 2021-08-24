@@ -5,8 +5,6 @@
     font-weight: $weight;
 }
 
-
-
 @mixin hover($color){
     &:hover{
         transition: .7s;
@@ -23,8 +21,7 @@
     @media screen and (max-width:$width) {
         grid-template-columns: 1fr;
         padding: 0 20px;
-        justify-content: center; 
-        
+        justify-content: center;        
         @content       
     }
     
