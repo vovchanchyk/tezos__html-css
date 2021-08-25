@@ -1,44 +1,41 @@
+.description {
+  display: grid;
+  row-gap: 7px;
+  color: $color;
+  font-family: Graphic;
+  &--color--white {
+    color: #fff;
+    p {
+      color: currentColor;
+    }
+  }
+  &--center {
+    @extend %text-center;
+  }
 
-.description {    
-    display: grid;
-    row-gap: 7px;
-    color: $color;
-    font-family: Graphic;
+  &__title {
+    @include font($f-size-2, $f-height-2, 400);
+    padding: 10px 10px;
+    @media screen and (max-width: 375px) {
+      padding: 10px 0;
+      @include font(38px, 45px, 40);
+    }
+  }
 
-    &--color--white{
-        color: #fff;
-
-        p{
-            color: currentColor;
-        }
+  &__title--big {
+    @include font($f-size-1, $f-height-1, 700);
+    @media screen and (max-width: 768px) {
+      @include font($f-size-2, $f-height-2, 400);
     }
-    &--center{
-        @extend %text-center;
+  }
+  &__subtitle {
+    padding: 10px;
+    @include font($f-size-3, $f-height-3, 400);
+    color: $color-second;
+  }
+  &__subtitle--hide--md {
+    @media screen and (max-width: 992px) {
+      display: none;
     }
-
-    &__title {
-       @include font($f-size-2,$f-height-2,400);
-       padding: 10px 10px;   
-       @media screen and (max-width:375px) {
-        padding: 10px 0;
-        @include font(38px,45px,40)
-       }
-    }
-
-    &__title--big { 
-        @include font($f-size-1, $f-height-1, 700);   
-        @media screen and (max-width:768px) {
-            @include font($f-size-2,$f-height-2,400);          
-        }      
-    }
-    &__subtitle {
-        padding: 10px; 
-        @include font($f-size-3,$f-height-3,400); 
-        color: $color-second;
-    }
-    &__subtitle--hide--md {
-        @media screen and (max-width:992px) {
-            display: none;
-        }
-    }
+  }
 }

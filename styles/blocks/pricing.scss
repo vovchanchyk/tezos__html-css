@@ -1,16 +1,13 @@
 .pricing {
-  display: grid;
+  @extend %general;
   grid-template-columns: minmax(min-content, 1105px);
   grid-template-rows: 20px auto auto 20px;
-  row-gap: 80px;
-  justify-content: center;
-  padding: 0 20px;
+  
+
   background-color: rgb(37, 43, 66);
 
   &__description {
-    grid-row: 2/3;
-    color: white;
-    max-width: 552px;
+    @extend %description;  
   }
 
   &__items {
@@ -21,7 +18,7 @@
     align-items: center;
     
 
-    @include media-container-lg {
+    @include media-container {
       row-gap: 50px;
       grid-template-columns: minmax(270px, 355px);
       grid-template-rows: auto auto auto;

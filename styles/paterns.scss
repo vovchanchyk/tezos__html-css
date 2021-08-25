@@ -1,21 +1,46 @@
 
-
 %position-center{
     display: grid;
     justify-content: center;
     align-items: center;
 }
 
-
 %text-center{
     margin: auto;
     text-align: center;
 }
 
+%general-font{
+    font-family: Graphic;
+}
+
+%general-padding{
+    padding: 0 20px;
+}
+
+%general-gap{
+    row-gap: 80px;
+}
+
+%p-description{
+    grid-row: 2/3;
+}
+
+%w-description{
+    max-width: 552px;
+}
+
+%description{
+    @extend %w-description;
+    @extend %text-center;
+    @extend %p-description;
+}
 
 
-
-
-
-
+%general{
+    @extend %general-font;
+    @extend %general-gap;
+    @extend %position-center;
+    @extend %general-padding;
+}
 

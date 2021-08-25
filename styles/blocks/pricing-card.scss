@@ -8,11 +8,10 @@
     color: $color;
     font-family: Graphic;
    
-
-
     &__title {
         @include font($f-size-4,$f-height-4,700 );      
         @extend %text-center;
+        margin-bottom: 6px;
     }
 
     &__subtitle {
@@ -20,6 +19,7 @@
        word-wrap: break-word;
        @extend %text-center;
        color: $color-second;
+       
     }
 
     &__cost {

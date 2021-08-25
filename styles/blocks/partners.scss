@@ -1,25 +1,14 @@
 .partners {
- 
-  display: grid;
+  @extend %general;
   grid-template-columns: minmax(952px,1075px);
   grid-template-rows: 0.1px auto auto auto 0.1px;
-  row-gap: 80px;
-  justify-content: center;
-  font-family: Graphic;
-  padding: 0 20px;
 
-
-
-  @include media-container-lg{
+  @include media-container{
     justify-items: center
   };
 
-
   &__description {
-    grid-row: 2/3;
-    max-width: 522px;
-    @extend %text-center;
- 
+    @extend %description;
   }
 
   &__items {
@@ -46,7 +35,6 @@
     align-content: center;
     text-align: center;
     
-   
     @media screen and (max-width:992px) {
       width: 275px; 
       padding: 25px 40px;

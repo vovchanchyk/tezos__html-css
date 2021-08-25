@@ -16,7 +16,7 @@
     }    
 }
 
-@mixin media-container-lg($width : 992px) {
+@mixin media-container($width : 992px) {
   
     @media screen and (max-width:$width) {
         grid-template-columns: 1fr;

@@ -1,10 +1,8 @@
 .features {
-    display: grid;
-    justify-content: center;
+    @extend %general;
     grid-template-rows: auto auto auto;
     grid-template-columns: minmax(218px,1177px);
-    row-gap: 80px;
-    padding: 0 20px;
+      
     @media screen and (max-width:992px) {
         row-gap: 50px;   
     }
@@ -13,7 +11,7 @@
     }
 
     &__description {
-        max-width: 552px;
+       @extend %w-description;
         grid-area: 1/1/2/2;
     }
 

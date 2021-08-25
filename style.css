@@ -101,20 +101,38 @@ h6 {
   font-weight: normal;
   font-style: normal;
 }
-.socials__link, .btn, .nav__item {
+.socials__link, .btn, .nav__item, .footer, .contact, .pricing, .testimonials, .partners, .hero, .features, .header {
   display: grid;
   justify-content: center;
   align-items: center;
 }
 
-.contact__form, .contact__description, .price-card__feature, .price-card__subtitle, .price-card__title, .testimonials__text, .partners__description, .description--center, .header__body {
+.contact__form, .price-card__feature, .price-card__subtitle, .price-card__title, .testimonials__text, .description--center, .header__body, .contact__description, .pricing__description, .partners__description {
   margin: auto;
   text-align: center;
 }
 
+.footer, .contact, .pricing, .testimonials, .partners, .hero, .features, .header {
+  font-family: Graphic;
+}
+
+.cta__container, .footer, .contact, .pricing, .testimonials, .partners, .hero, .features, .header {
+  padding: 0 20px;
+}
+
+.footer, .contact, .pricing, .testimonials, .partners, .hero, .features, .header {
+  row-gap: 80px;
+}
+
+.testimonials__description, .contact__description, .pricing__description, .partners__description {
+  grid-row: 2/3;
+}
+
+.features__description, .contact__description, .pricing__description, .partners__description {
+  max-width: 552px;
+}
+
 .header {
-  display: grid;
-  justify-content: center;
   grid-template-columns: minmax(246px, 1210px);
   grid-template-rows: auto auto;
   background: conic-gradient(from -70deg at 50% 90%, rgba(0, 0, 0, 0.1) -70deg 140deg, white 140deg), url("./imgs/header/80b7ece24a3d47292461f8e199ffdd36.jfif") no-repeat 50%/cover;
@@ -130,7 +148,7 @@ h6 {
 @media screen and (max-width: 992px) {
   .header__head {
     grid-template-columns: auto auto;
-    padding: 16px 17px;
+    padding: 16px 0;
   }
 }
 .header__body {
@@ -175,7 +193,7 @@ h6 {
 .header__burger {
   display: none;
   position: absolute;
-  right: 20px;
+  right: 0px;
 }
 @media screen and (max-width: 992px) {
   .header__burger {
@@ -227,6 +245,7 @@ h6 {
 @media screen and (max-width: 992px) {
   .nav__list {
     grid-auto-flow: row;
+    grid-auto-columns: 1fr;
   }
 }
 .nav__item {
@@ -239,6 +258,7 @@ h6 {
 @media screen and (max-width: 992px) {
   .nav__item {
     justify-content: flex-start;
+    width: 100%;
   }
 }
 .nav__link {
@@ -346,12 +366,8 @@ h6 {
 }
 
 .features {
-  display: grid;
-  justify-content: center;
   grid-template-rows: auto auto auto;
   grid-template-columns: minmax(218px, 1177px);
-  row-gap: 80px;
-  padding: 0 20px;
 }
 @media screen and (max-width: 992px) {
   .features {
@@ -364,7 +380,6 @@ h6 {
   }
 }
 .features__description {
-  max-width: 552px;
   grid-area: 1/1/2/2;
 }
 .features__items {
@@ -454,10 +469,8 @@ h6 {
 }
 
 .hero {
-  display: grid;
   grid-template-rows: 269px auto 269px;
-  grid-template-columns: minmax(20px, 266.85px) minmax(420px, 532px) minmax(20px, 50px) minmax(420px, 661px) minmax(20px, 266.85px);
-  justify-content: center;
+  grid-template-columns: minmax(420px, 532px) minmax(20px, 50px) minmax(420px, 661px);
 }
 @media screen and (max-width: 992px) {
   .hero {
@@ -470,7 +483,7 @@ h6 {
   }
 }
 .hero__left {
-  grid-area: 2/2/3/3;
+  grid-area: 2/1/3/2;
   display: grid;
   row-gap: 59px;
 }
@@ -481,7 +494,7 @@ h6 {
   }
 }
 .hero__right {
-  grid-area: 2/4/3/5;
+  grid-area: 2/3/3/4;
   display: flex;
   justify-content: center;
 }
@@ -521,7 +534,6 @@ h6 {
   grid-template-columns: minmax(355px, 795px) minmax(20px, 113px) minmax(293px, 484px);
   grid-template-rows: 69px auto minmax(199px, auto) 69px;
   row-gap: 15px;
-  padding: 0 20px;
   margin: auto;
 }
 @media screen and (max-width: 992px) {
@@ -535,8 +547,7 @@ h6 {
   }
 }
 .cta__image {
-  grid-column: 1/2;
-  grid-row: 2/span 3;
+  grid-area: 2/1/5/2;
   max-width: 100%;
   align-self: center;
   object-fit: scale-down;
@@ -544,14 +555,12 @@ h6 {
 }
 @media screen and (max-width: 992px) {
   .cta__image {
-    grid-column: 1/2;
-    grid-row: 2/span 1;
+    grid-area: 2/1/3/2;
     object-position: -45px;
   }
 }
 .cta__description {
-  grid-column: 3/4;
-  grid-row: 2/span 1;
+  grid-area: 2/3/3/4;
   display: grid;
   padding: 0 10px;
   align-self: flex-end;
@@ -559,8 +568,7 @@ h6 {
 @media screen and (max-width: 992px) {
   .cta__description {
     text-align: center;
-    grid-column: 1/2;
-    grid-row: 1/span 1;
+    grid-area: 1/1/2/2;
   }
 }
 .cta__title {
@@ -584,9 +592,8 @@ h6 {
   font-weight: 400;
 }
 .cta__form {
-  grid-column: 3/4;
-  grid-row: 3/span 1;
-  padding: 0 10px;
+  grid-area: 3/3/4/4;
+  padding: 10px 10px 0;
 }
 @media screen and (max-width: 992px) {
   .cta__form {
@@ -608,6 +615,9 @@ h6 {
 }
 .cta__input {
   flex: 1 1 273px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
 }
 @media screen and (max-width: 992px) {
   .cta__input {
@@ -615,8 +625,11 @@ h6 {
   }
 }
 .cta__submit {
-  padding: 19px 0;
+  padding: 19px 38px;
   flex: 1 1 172px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
 }
 @media screen and (max-width: 992px) {
   .cta__submit {
@@ -644,7 +657,7 @@ h6 {
 }
 .form__subtitle {
   font-size: 16px;
-  line-height: 23px;
+  line-height: 25px;
   font-weight: 400;
   padding: 0 10px;
 }
@@ -677,7 +690,7 @@ h6 {
 }
 .form__subtitle {
   font-size: 16px;
-  line-height: 23px;
+  line-height: 25px;
   font-weight: 400;
   padding: 0 10px;
 }
@@ -691,13 +704,8 @@ h6 {
 }
 
 .partners {
-  display: grid;
   grid-template-columns: minmax(952px, 1075px);
   grid-template-rows: 0.1px auto auto auto 0.1px;
-  row-gap: 80px;
-  justify-content: center;
-  font-family: Graphic;
-  padding: 0 20px;
 }
 @media screen and (max-width: 992px) {
   .partners {
@@ -706,10 +714,6 @@ h6 {
     justify-content: center;
     justify-items: center;
   }
-}
-.partners__description {
-  grid-row: 2/3;
-  max-width: 522px;
 }
 .partners__items {
   grid-row: 3/4;
@@ -753,16 +757,8 @@ h6 {
 }
 
 .testimonials {
-  display: grid;
   grid-template-rows: 20px auto auto auto 20px;
   grid-template-columns: minmax(276px, 987px);
-  row-gap: 80px;
-  justify-content: center;
-  padding: 0 20px;
-  font-family: Graphic;
-}
-.testimonials__description {
-  grid-row: 2/3;
 }
 .testimonials__center {
   grid-row: 3/4;
@@ -811,18 +807,9 @@ h6 {
 }
 
 .pricing {
-  display: grid;
   grid-template-columns: minmax(min-content, 1105px);
   grid-template-rows: 20px auto auto 20px;
-  row-gap: 80px;
-  justify-content: center;
-  padding: 0 20px;
   background-color: #252b42;
-}
-.pricing__description {
-  grid-row: 2/3;
-  color: white;
-  max-width: 552px;
 }
 .pricing__items {
   display: grid;
@@ -870,6 +857,7 @@ h6 {
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
+  margin-bottom: 6px;
 }
 .price-card__subtitle {
   font-size: 23px;
@@ -940,12 +928,8 @@ h6 {
 }
 
 .contact {
-  display: grid;
   grid-template: 50px auto auto 50px/minmax(378px, 453px) minmax(512px, 725px);
-  padding: 0 20px;
-  justify-content: center;
   grid-gap: 50px;
-  font-family: Graphic;
 }
 @media screen and (max-width: 992px) {
   .contact {
@@ -957,9 +941,7 @@ h6 {
   }
 }
 .contact__description {
-  grid-row: 2/3;
   grid-column: 1/3;
-  max-width: 540px;
 }
 .contact__left {
   grid-row: 3/4;
@@ -1005,8 +987,7 @@ h6 {
   }
 }
 .contact__items {
-  grid-column: 1/4;
-  grid-row: 1/2;
+  grid-area: 1/1/2/4;
   display: grid;
   grid-template-columns: minmax(min-content, 313px) 137px 245px;
 }
@@ -1052,8 +1033,7 @@ h6 {
 }
 .contact__map {
   width: 100%;
-  grid-row: 2/3;
-  grid-column: 2/3;
+  grid-area: 2/2/3/3;
   height: 343px;
 }
 @media screen and (max-width: 992px) {
@@ -1081,13 +1061,11 @@ h6 {
 }
 
 .footer {
-  background-color: #252b42;
   grid-template-columns: auto minmax(20px, 125px) auto;
-  display: grid;
-  justify-content: center;
-  font-family: Graphic;
-  padding: 150px 0;
+  padding-top: 150px;
+  padding-bottom: 150px;
   color: #fff;
+  background-color: #252b42;
 }
 @media screen and (max-width: 768px) {
   .footer {
@@ -1104,7 +1082,6 @@ h6 {
   display: grid;
   grid-template-columns: repeat(3, minmax(150px, 185px));
   grid-gap: 73px 20px;
-  padding: 0 20px;
 }
 @media screen and (max-width: 768px) {
   .footer__left {
@@ -1117,7 +1094,7 @@ h6 {
   row-gap: 15px;
 }
 .footer__list-title {
-  font-size: 20;
+  font-size: 20px;
   line-height: 28px;
   font-weight: 700;
 }
@@ -1126,7 +1103,7 @@ h6 {
   row-gap: 15px;
 }
 .footer__link {
-  font-size: 15;
+  font-size: 15px;
   line-height: 28px;
   font-weight: 400;
   color: #fff;
@@ -1137,7 +1114,6 @@ h6 {
   display: grid;
   row-gap: 10px;
   height: fit-content;
-  padding: 10px;
 }
 @media screen and (max-width: 768px) {
   .footer__right {
@@ -1173,13 +1149,11 @@ h6 {
 }
 
 .footer {
-  background-color: #252b42;
   grid-template-columns: auto minmax(20px, 125px) auto;
-  display: grid;
-  justify-content: center;
-  font-family: Graphic;
-  padding: 150px 0;
+  padding-top: 150px;
+  padding-bottom: 150px;
   color: #fff;
+  background-color: #252b42;
 }
 @media screen and (max-width: 768px) {
   .footer {
@@ -1196,7 +1170,6 @@ h6 {
   display: grid;
   grid-template-columns: repeat(3, minmax(150px, 185px));
   grid-gap: 73px 20px;
-  padding: 0 20px;
 }
 @media screen and (max-width: 768px) {
   .footer__left {
@@ -1209,7 +1182,7 @@ h6 {
   row-gap: 15px;
 }
 .footer__list-title {
-  font-size: 20;
+  font-size: 20px;
   line-height: 28px;
   font-weight: 700;
 }
@@ -1218,7 +1191,7 @@ h6 {
   row-gap: 15px;
 }
 .footer__link {
-  font-size: 15;
+  font-size: 15px;
   line-height: 28px;
   font-weight: 400;
   color: #fff;
@@ -1229,7 +1202,6 @@ h6 {
   display: grid;
   row-gap: 10px;
   height: fit-content;
-  padding: 10px;
 }
 @media screen and (max-width: 768px) {
   .footer__right {
