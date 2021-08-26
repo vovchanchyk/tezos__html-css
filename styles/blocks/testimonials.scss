@@ -6,7 +6,7 @@
   
 
   &__description {
-    @extend %p-description;
+    grid-row: 2/3;
   }
 
   &__center {

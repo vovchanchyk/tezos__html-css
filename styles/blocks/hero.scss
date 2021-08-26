@@ -1,11 +1,10 @@
 .hero {
   @extend %general;
-  grid-template-rows: 269px auto 269px;
+  grid-template-rows: 200px auto 200px;
   grid-template-columns:  
     minmax(420px, 532px)
     minmax(20px, 50px)
     minmax(420px, 661px);
- 
     @include media-container{
       grid-template-rows: 30px auto auto 30px;
       row-gap: 59px;

@@ -10,37 +10,25 @@
     text-align: center;
 }
 
-%general-font{
-    font-family: Graphic;
-}
 
 %general-padding{
     padding: 0 20px;
 }
 
-%general-gap{
-    row-gap: 80px;
-}
-
-%p-description{
-    grid-row: 2/3;
-}
-
-%w-description{
-    max-width: 552px;
-}
 
 %description{
-    @extend %w-description;
+    max-width: 552px;
     @extend %text-center;
-    @extend %p-description;
+    grid-row: 2/3;
 }
 
 
 %general{
-    @extend %general-font;
-    @extend %general-gap;
-    @extend %position-center;
-    @extend %general-padding;
+    font-family: Graphic, sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    row-gap: 80px;
+    padding: 0 20px;
 }
 

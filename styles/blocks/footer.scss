@@ -68,11 +68,11 @@
     margin: auto;
   }
 
-  &__contact-text {
+  &__contact-link {
     color: #fff;
     text-align: start;
     font-style: normal;
-    @include font(20, 28px, 400);
+    @include font($f-size-4, $f-height-4, 400);
   }
 
   &__socials {

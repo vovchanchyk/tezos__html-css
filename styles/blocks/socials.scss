@@ -6,8 +6,8 @@
     position: relative;
     
     &__link {
-        width: 41.99px;
-        height: 41.99px;
+        width: 40.99px;
+        height: 40.99px;
         @extend %position-center;
         &:hover{
             transition: 0.4s; 
@@ -20,7 +20,7 @@
 
         &--hover--light{
             &:hover{     
-                @include hover(#fff);
+                @include hover(#969393);
             }
         }
        

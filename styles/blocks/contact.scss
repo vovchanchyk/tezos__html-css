@@ -1,9 +1,9 @@
 .contact {
   @extend %general;
   grid-template:
-  50px auto auto 50px
-  /minmax(378px, 453px)
-  minmax(512px, 725px); 
+    50px auto auto 50px
+    / minmax(378px, 453px)
+    minmax(512px, 725px);
   grid-gap: 50px;
 
   @include media-container {
@@ -93,7 +93,9 @@
       padding: 10px 0;
     }
   }
-
+  &__link {
+    color: currentColor;
+  }
   &__icon {
     @media screen and (max-width: 375px) {
       padding: 0;
